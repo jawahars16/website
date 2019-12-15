@@ -1,13 +1,16 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+
 import Bio from "../components/bio"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import PostLayout from "../components/post-layout"
+import "./legacy-post"
+import './hljs.css'
 
-class BlogPostTemplate extends React.Component {
+class LegacyBlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
+    const post = this.props.data.legacyContent
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
 
@@ -37,14 +40,14 @@ class BlogPostTemplate extends React.Component {
               {post.frontmatter.date}
             </p>
           </header>
-          <section dangerouslySetInnerHTML={{ __html: post.html }}/>
+          <section dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr
             style={{
               marginBottom: rhythm(1),
             }}
           />
           <footer>
-            <Bio/>
+            <Bio />
           </footer>
         </article>
 
@@ -79,30 +82,23 @@ class BlogPostTemplate extends React.Component {
   }
 }
 
-export default BlogPostTemplate
+export default LegacyBlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query LegacyBlogPostBySlug($slug: String!) {
     site {
       siteMetadata {
         title
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    legacyContent(fields: { slug: { eq: $slug } }) {
       id
-      excerpt(pruneLength: 160)
+      excerpt 
       html
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
         description
-        featuredImage {
-          childImageSharp {
-            fluid(traceSVG: {}) {
-              base64
-            }
-          }
-        }
       }
     }
   }

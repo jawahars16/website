@@ -1,7 +1,7 @@
 import React from "react"
+
 import { rhythm } from "../utils/typography"
 import './layout.css';
-import Jumpotron from "./jumpotron"
 
 const styles = {
   navBar: {
@@ -20,13 +20,13 @@ const styles = {
   }
 }
 
-class Layout extends React.Component {
+class PostLayout extends React.Component {
   render() {
     const { children } = this.props
-
     return (
       <div>
-        <Jumpotron />
+        <div style={styles.navBar}>
+        </div>
         <div style={styles.layout}>
           <main>{children}</main>
           <footer>
@@ -40,4 +40,4 @@ class Layout extends React.Component {
   }
 }
 
-export default Layout
+export default PostLayout

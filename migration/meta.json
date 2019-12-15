@@ -1,0 +1,1120 @@
+[
+  {
+    "tags": [],
+    "featuredImage": "http://lh5.ggpht.com/-VRpjFrDEIA0/Uhi4n8O1Y4I/AAAAAAAABTM/Mnkm6ii2fs4/Capture_thumb%25255B6%25255D.png?imgmax=800",
+    "published_date": "2013-08-24T00:00:00.000Z",
+    "postId": "10-steps-to-consume-sqlite-in-wpf",
+    "title": "10 Steps to consume SQLite in\u00a0WPF",
+    "excerpt": "\t\t\tSQL Lite is the compact database system used by more client applications to manage local data. It is more lightweight and easy to use. This article will explain how to create SQL Lite DB and connect it to a WPF client application. Let\u2019s create a simple client app which read employees data from lo"
+  },
+  {
+    "title": "5 Tricks you should know in WPF \u2013 PART\u00a01",
+    "excerpt": "\t\t\t1. Write C# Code in XAML\nWe all know that XAML is a design language which helps in building user interface. But how many of us know, that, it is possible to write C# code inside XAML. This can be achived using x:Code. This attribute allows placement of code within a XAML production.\nThe code with",
+    "tags": [
+      "cdata",
+      "code",
+      "design",
+      "namespace",
+      "tips",
+      "tricks",
+      "wpf",
+      "x:Name",
+      "xaml"
+    ],
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2014/12/linqtotree.png",
+    "published_date": "2014-12-02T00:00:00.000Z",
+    "postId": "5-tricks-you-dont-know-in-wpf"
+  },
+  {
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2014/12/window.png",
+    "published_date": "2014-12-05T00:00:00.000Z",
+    "postId": "5-tricks-you-should-know-in-wpf-part-2",
+    "title": "5 Tricks you should know in WPF \u2013 PART\u00a02",
+    "excerpt": "\t\t\t1. TextBlock is not just for Text\nWe all know that TextBlock is an UI control, which will carry a piece of text. But actually MSDN explains it in a bit different way.\nProvides a lightweight control for displaying small amounts of flow content.\nFlow Content !!!, which not means only text. Lets loo",
+    "tags": [
+      "fallbackvalue",
+      "priority binding",
+      "reference",
+      "targetnullvalue",
+      "textblock",
+      "wpf",
+      "xaml"
+    ]
+  },
+  {
+    "postId": "accentbrush-for-wpf-metro-theme",
+    "title": "AccentBrush for WPF Metro\u00a0Theme",
+    "excerpt": "\t\t\tMah Apps provide a very easy way to style any WPF applications with Metro theme. They provided 22 different accent colours and two themes dark and light. Just by merging the resources in App.Resources, your app will look pretty much like Metro app.\n<ResourceDictionary> <ResourceDictionary.MergedD",
+    "tags": [
+      "mahapps change vs theme"
+    ],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2014-01-18T00:00:00.000Z"
+  },
+  {
+    "title": "Attached Properties VS\u00a0Behaviors",
+    "excerpt": "\t\t\tOne of the powerful concept of WPF is Attached Properties. The primary purpose of attached property is to define a unique value to child elements for a property, which is defined in Parent element as MSDN suggests. Some of the typical examples are Grid.Row, DockPanel.Dock, etc.\nBut it can also be",
+    "tags": [
+      "attached properties",
+      "behavior",
+      "wpf",
+      "xaml"
+    ],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2014-12-16T00:00:00.000Z",
+    "postId": "attached-properties-vs-behaviors"
+  },
+  {
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2014-07-28T00:00:00.000Z",
+    "postId": "awaitable-storyboard-in-wpf",
+    "title": "Awaitable storyboard in\u00a0WPF",
+    "excerpt": "\t\t\tNormally when\u00a0a storyboard is running, setting the FillBehavior (Learn more about FillBehavior) to HoldEnd is risk. Because\u00a0for a dependency property, storyboard is considered to have highest priority of setting the value. So once storyboard is done, user cannot change its value locally. So users",
+    "tags": [
+      "animation",
+      "async",
+      "asynchronous",
+      "await",
+      "storyboard",
+      "wpf",
+      "xaml"
+    ]
+  },
+  {
+    "title": "Bind System Font Families to Combo Box in\u00a0XAML.",
+    "excerpt": "\t\t\t\nPopulating the WPF ComboBox with System Font Families is so easy and can be done in XAML without code behind.\n<ComboBox\u00a0x:Name=\"fonts\"\u00a0          Width=\"200\"\u00a0          ItemsSource=\"{Binding\u00a0Source={x:Static\u00a0Member=Fonts.SystemFontFamilies}}\"\u00a0/>\n\nAlso to show each Font Item with its own correspond",
+    "tags": [],
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2012/05/ee31a-sshot-11.png",
+    "published_date": "2012-05-05T00:00:00.000Z",
+    "postId": "bind-system-font-families-to-combo-box-in-xaml"
+  },
+  {
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2012-10-03T00:00:00.000Z",
+    "postId": "building-a-deployable-custom-control-for-xaml-metro-style-apps",
+    "title": "Building a deployable custom control for XAML Metro style\u00a0apps",
+    "excerpt": "\t\t\t\nTim Heuer wrote a very nice article about deployment of custom control for WinRT.\nAt //build one of the surprising immediate things I heard about was folks wanting to build custom controls right away. \u00a0I knew that would happen, but not so quick on something so new (WinRT). \u00a0The XAML platform did",
+    "tags": []
+  },
+  {
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2011-10-01T00:00:00.000Z",
+    "postId": "c-text-processing-function-library",
+    "title": "C# Text Processing Function\u00a0Library",
+    "excerpt": "\t\t\t  \nString Functions in C#.NET\n\nC#.NET comes with a lot of great string processing functions like Substring, Compare, IndexOf. But the truth is the built-in .NET string functions are very limited. Programmers constantly have to rewrite similar text processing functions over and over.\nLuckily we ca"
+  },
+  {
+    "title": "Capture Screenshot in\u00a0WPF",
+    "excerpt": "\t\t\tCapturing screen shot in Windows Forms is\u00a0straight\u00a0forward. But in WPF, we need some Pinvoke calls. We going to use the methods from User32.dll and gdi32.dll. For more reference about available methods in User32.dll, go through here.\n\n\u00a0public\u00a0class\u00a0InteropHelper\u00a0\u00a0\u00a0\u00a0{\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0[DllImport(\"user32.dll",
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2012-04-28T00:00:00.000Z",
+    "postId": "capture-screenshot-in-wpf"
+  },
+  {
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2012-04-28T00:00:00.000Z",
+    "postId": "change-windows-cursor-globally-in-wpf",
+    "title": "Change Windows cursor globally in\u00a0WPF",
+    "excerpt": "\t\t\tIt is very obvious that we can change the cursor in WPF using FrameworkElement.Cursor. But the trick is, it only works within your application and not outside your application Main Window. In case if you want to change the cursor for the entire OS, we\u00a0don\u2019t\u00a0have any direct way in WPF. But most of"
+  },
+  {
+    "tags": [],
+    "featuredImage": "http://www.codeproject.com/KB/WPF/396811/character_map.gif",
+    "published_date": "2012-06-04T00:00:00.000Z",
+    "postId": "character-map-in-wpf",
+    "title": "Character Map in\u00a0WPF",
+    "excerpt": "\t\t\t\nIntroduction\u00a0\u00a0\u00a0\n(View this article in code project)\n\nThe\u00a0Character Map\u00a0utility is free on all Windows machines and can be used to copy and paste accented letters and other foreign language characters into any Windows application. The\u00a0Character Map\u00a0is similar to the\u00a0Insert Symbol\u00a0tool found in so"
+  },
+  {
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2014/03/groupingdemo.png",
+    "published_date": "2014-03-08T00:00:00.000Z",
+    "postId": "collectionviewsource-grouping-selecteditem-problem",
+    "title": "CollectionViewSource Grouping SelectedItem\u00a0Problem",
+    "excerpt": "\t\t\tToday I just came across a problem in ListBox, probably with all Selectors. When you bind a CollectionView object which has GroupDescriptions added as below, the first item of Selector will set to be selected by default without user interaction.\n<CollectionViewSource x:Key=\"source\" Source=\"{Bindi",
+    "tags": [
+      "binding",
+      "collectionview",
+      "GroupDescriptions",
+      "grouping",
+      "listbox",
+      "selected item",
+      "wpf"
+    ]
+  },
+  {
+    "published_date": "2012-01-25T00:00:00.000Z",
+    "postId": "customize-system-menu-in-wpf",
+    "title": "Customize System Menu in\u00a0WPF.",
+    "excerpt": "\t\t\tMost of the times, I wonder how System Menu in Native Window has been replaced with custom Menu in WPF. Finally I found the trick. I just want to share the idea here.\nNormally WPF does not allow direct customization to Non-client area of Window. But that can be done using native methods. We need ",
+    "tags": [],
+    "featuredImage": "image/png;base64,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"
+  },
+  {
+    "tags": [],
+    "featuredImage": "https://storage.googleapis.com/jawahar-tech/1560609620255.jpg",
+    "published_date": "2018-11-12T18:30:00.000Z",
+    "postId": "dependency-inversion-a-real-world-comparison",
+    "title": "Dependency Inversion - a real world comparison.",
+    "excerpt": "Let me start with a story.Bob need a new assistant for his startup. He hired Janice. Bob wanted Janice to concentrate more on the paper work. One day Bob wanted print outs of some old invoices. Janice collected those invoices. She then get a new printer from the store and get those invoices printed."
+  },
+  {
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2011-09-17T00:00:00.000Z",
+    "postId": "detect-capslock-status-in-c",
+    "title": "Detect CapsLock Status in\u00a0C#",
+    "excerpt": "\t\t\tAll usual registration forms will contain a password edit and users has to be warned for the Caps Lock state. So it is pretty easy in C# to check this. The following line will do the magic.\n\nif\u00a0(Console.CapsLock){\u00a0\u00a0\u00a0 Console.WriteLine(\"CapsLock\u00a0On!!!\");}\nHappy C#\u2026..\n\n\n\t\t\t",
+    "tags": []
+  },
+  {
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2013-03-13T00:00:00.000Z",
+    "postId": "different-sized-tile-items-in-winrt-gridview",
+    "title": "Different sized tile items in WinRT\u00a0GridView",
+    "excerpt": "\t\t\tGridView in WinRT allows you to arrange tile items in wrap manner. In case, if you want to arrange items as in Windows store app, we need different sized tile items. There is no direct way to configure different sized items while using data binding in Grid View. I am going to explain the solution",
+    "tags": []
+  },
+  {
+    "title": "Digging into user32.dll.",
+    "excerpt": "\t\t\tMost of the times, we need to interact with native windows actions in WPF or Win Forms. C# provides a better way to import an assembly dynamically and we can effectively use the methods of native System assembly.\u00a0\n\n\u00a0       class\u00a0Example\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0{\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0//\u00a0Use\u00a0DllImport\u00a0to\u00a0import\u00a0the\u00a0Win32\u00a0Mes",
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2011-10-01T00:00:00.000Z",
+    "postId": "digging-into-user32-dll"
+  },
+  {
+    "tags": [],
+    "featuredImage": "http://lh5.ggpht.com/-CwW_It4w_a0/UX4NJI3-kmI/AAAAAAAABQU/gtcq0s1ZKAI/image_thumb10.png?imgmax=800",
+    "published_date": "2013-04-29T00:00:00.000Z",
+    "postId": "enum-to-combobox-binding",
+    "title": "Enum to ComboBox\u00a0binding",
+    "excerpt": "\t\t\tAny real world appliation would like bind the Enum values to a ComboBox. So it is always better to have common code that will do the logic. Below, I have a helper class which exposed a property to get the enum type, so that I can resolve the enum values.\n\n\n   1: public static Type GetEnum(Depende"
+  },
+  {
+    "tags": [],
+    "featuredImage": "http://www.codeproject.com/KB/WPF/374887/Eyedropper_control.png",
+    "published_date": "2012-04-28T00:00:00.000Z",
+    "postId": "eye-dropper-control-in-wpf",
+    "title": "Eye Dropper control in\u00a0WPF",
+    "excerpt": "\t\t\t\n   Introduction\u00a0\n(View this article in Code Project)\n\nUsually we come across different types of eye dropper controls in designers. We can move the mouse over the desktop and other applications to pick the color under the mouse.\u00a0A normal eye dropper will pick color only within the application lik"
+  },
+  {
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2011/10/ee4b5-14.jpg?w=300",
+    "published_date": "2011-10-01T00:00:00.000Z",
+    "postId": "finding-memory-leaks-in-wpf-based-applications",
+    "title": "Finding Memory Leaks in WPF-based\u00a0applications",
+    "excerpt": "\t\t\t\n\n  \nThere are numbers of blogs that folks wrote about memory leaks in Microsoft .Net Framework managed code and unmanaged code based applications. \nThis blog,\n\nShow coding practices      that can cause memory leaks which are more unique to WPF-base apps \nShare information about      memory leaks",
+    "tags": []
+  },
+  {
+    "published_date": "2019-08-26T14:01:18.558Z",
+    "postId": "finite-state-machine-flutter",
+    "title": "Finite State Machine in Flutter",
+    "featuredImage": "https://storage.googleapis.com/jawahar-tech/fsm/traffic_light.jpg",
+    "excerpt": "Have you ever worked with a system, where it often end up in an unexpected state? For example, how about displaying both play and pause button at the same time in a media player. What about both red and green lights glowing at the sme time or an oran"
+  },
+  {
+    "title": "GIF Animation in\u00a0WPF",
+    "excerpt": "\t\t\tGIF images cannot be used directly in a WPF application. There are lot of third party libraries which support GIF images in WPF. Here is one which could play animated sprite sheets in WPF. [Read more]\n\t\t\t",
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2013-05-06T00:00:00.000Z",
+    "postId": "gif-animation-in-wpf"
+  },
+  {
+    "title": "Golang way of inheritance",
+    "excerpt": "Go claims itself as an object oriented programming language. Of course it is. But developers who came from Java or C#, would realise that OOPS in Go is not same as other languages. Let's see how Golang handles Inheritance.Inheritance - From Wikipedia - the mechanism of basing an object or class upon",
+    "tags": [],
+    "featuredImage": "https://storage.googleapis.com/jawahar-tech/1560609620174.png",
+    "published_date": "2019-02-21T18:30:00.000Z",
+    "postId": "golang-inheritance-vs-composition"
+  },
+  {
+    "title": "Handling orientation changes in Windows\u00a08",
+    "excerpt": "\t\t\tDisplayProperties class provides various properties that are related to the physical display. For most of these properties, the class provides events to allow clients to monitor for changes in the properties.\nRespond to the static OrientationChanged event. Determine the orientation from the Curre",
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2012-09-26T00:00:00.000Z",
+    "postId": "handling-orientation-changes-in-windows-8"
+  },
+  {
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2011-10-01T00:00:00.000Z",
+    "postId": "how-to-process-waiting-window-messages-during-a-loop",
+    "title": "How to process waiting window messages during a\u00a0loop?",
+    "excerpt": "\t\t\t\nThe standard way of\u00a0allowing Windows messages to be processed is to call Application.DoEvents  method. However, the Application class in WPF does not have a DoEvents  method. So, what you need\u00a0is to find a way of calling this method,\u00a0or an  alternative method! Actually, it is surprisingly easy t"
+  },
+  {
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2014-01-18T00:00:00.000Z",
+    "postId": "invokecommandaction-with-eventargs-as-command-parameter",
+    "title": "InvokeCommandAction with EventArgs as Command\u00a0Parameter",
+    "excerpt": "\t\t\tExpression Blend team provides the ability to wire up some events to viewmodel through commands like SelectionChanged of a ListBox, etc using System.Windows.Interactivity.dll. You can bind a Command to any event with WPF controls. There is also a way to bind command parameter also, so that view s",
+    "tags": []
+  },
+  {
+    "title": "Javascript - Asynchronous Programming",
+    "excerpt": "Asynchronous programming becomes unavoidable in todays programming. In this article, I would like to talk about, how Javascript evolved to handle asynchronous programming using callbacks. What is a callback? Consider a scenario of a candidate who attends an interview in a reputed organisation. Once ",
+    "tags": [],
+    "featuredImage": "https://storage.googleapis.com/jawahar-tech/1560609617249.jpg",
+    "published_date": "2018-05-09T18:30:00.000Z",
+    "postId": "javascript-asynchronous-programming"
+  },
+  {
+    "title": "Javascript - Compiled or Interpreted?",
+    "excerpt": "I started my career with .NET. I was a WPF developer and use Visual Studio as the primary IDE. Though I am a desktop application developer, I was aware of JavaScript programming. But I thought Javascript is a toy language and its primary purpose is to manipulate web pages.But the evolution of Javasc",
+    "tags": [],
+    "featuredImage": "https://storage.googleapis.com/jawahar-tech/1560609621463.jpg",
+    "published_date": "2018-06-06T18:30:00.000Z",
+    "postId": "javascript-compiled-or-interpreted"
+  },
+  {
+    "title": "MVVM Adapter for Syncfusion WPF Docking\u00a0Manager",
+    "excerpt": "\t\t\tThis article explains how to adapt the Syncfusion docking manager to an MVVM application. Since our WPF Docking Manager is not an item control, it is not possible to have a traditional item-source binding to a collection of objects in the view model. This can, however, be achieved by creating a w",
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2012-12-20T00:00:00.000Z",
+    "postId": "mvvm-adapter-for-syncfusion-wpf-docking-manager"
+  },
+  {
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2014/06/navigation.png",
+    "published_date": "2014-06-04T00:00:00.000Z",
+    "postId": "navigation-model-for-simple-mvvm-applications",
+    "title": "Navigation Model for simple MVVM\u00a0applications",
+    "excerpt": "\t\t\tNot all the WPF applications are huge. A very few are still used as utilities, installers and simple tools to achieve a specific task. Navigation is very trivial in applications. PRISM supports a very nice navigation framework.\u00a0To develop such simple WPF applications, developers really hesitate t",
+    "tags": [
+      "mvvm",
+      "navigation",
+      "PRISM",
+      "wpf"
+    ]
+  },
+  {
+    "title": "No more Dangling Pointers with Rust",
+    "featuredImage": "https://storage.googleapis.com/jawahar-tech/dangling_pointer/dangling_pointer_banner.jpg",
+    "excerpt": "In programming memory can be categorised into two - Static and dynamic memory.When memory size of the variables are known at compile time, we call that as static memory. For example primitive data types like int, floats and arrays are fixed size. Fix",
+    "published_date": "2019-07-31T16:25:18.752Z",
+    "postId": "no-more-dangling-pointers-with-rust"
+  },
+  {
+    "tags": [],
+    "featuredImage": "http://www.codeproject.com/KB/silverlight/320232/Checkbox.png",
+    "published_date": "2012-01-26T00:00:00.000Z",
+    "postId": "notification-control-in-silverlight",
+    "title": "Notification Control in\u00a0Silverlight.",
+    "excerpt": "\t\t\t\nIntroduction\n(View this article in Code Project)\n\nWe used to see a Notification tool tip in Windows 7/Vista to inform something  about particular context. For example, Capslock warning will be given through a  balloon tip on Passwordbox, if capslock has ON. Or sometimes low battery  information "
+  },
+  {
+    "tags": [
+      "text",
+      "tooltip",
+      "wpf",
+      "xaml"
+    ],
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2014/11/textbox.png",
+    "published_date": "2014-11-24T00:00:00.000Z",
+    "postId": "on-demand-tooltip-for-wpf-textblock",
+    "title": "On Demand Tooltip for WPF\u00a0TextBlock",
+    "excerpt": "\t\t\tAccording to\u00a0MSDN, a tooltip\n\nRepresents a small rectangular pop-up window that displays a brief description of a control\u2019s purpose when the user rests the pointer on the control.\n\nSetting a tooltip is really easy with WPF controls.\n<Button Content=\"Save\"        ToolTip=\"Save the contents\" />\nBut"
+  },
+  {
+    "title": "OOPS - Attribute vs State",
+    "excerpt": "In Object oriented programming objects are the fundamental unit. Usually an object is defined to have two characteristics. State and behaviorState is defined through variables, properties or functions (getter and setter) depends on the language. Behavior is usually defined through functions. Most of",
+    "tags": [],
+    "featuredImage": "https://storage.googleapis.com/jawahar-tech/1560609615997.jpg",
+    "published_date": "2019-02-16T18:30:00.000Z",
+    "postId": "oops-attribute-vs-state"
+  },
+  {
+    "tags": [
+      "trigger",
+      "wpf",
+      "xaml"
+    ],
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2014/01/sshot-5.png?w=300",
+    "published_date": "2014-01-22T00:00:00.000Z",
+    "postId": "order-does-matter-for-wpf-triggers",
+    "title": "Order does matter for WPF\u00a0Triggers",
+    "excerpt": "\t\t\tWhen applying style for a ListBoxItem, today I come across a weird problem. I have trigger for both Mouse over and Selected. On selected, the item should goLightBlue and Gray on mouse hover. But when user clicks an item, it gets selected. But still the color remains Gray. But when user leaves the"
+  },
+  {
+    "tags": [],
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2012/05/a93e7-sshot-7.png?w=300",
+    "published_date": "2012-05-04T00:00:00.000Z",
+    "postId": "registering-a-custom-file-extension-in-windows",
+    "title": "Registering a custom file extension in\u00a0Windows",
+    "excerpt": "\t\t\tMost of the real world applications need custom file extensions. Double clicking the file with such extension should be opened with particular application. This article explaining how to register a custom file extension in Windows 7. Custom file extensions normally resides in registry under the f"
+  },
+  {
+    "published_date": "2012-06-16T00:00:00.000Z",
+    "postId": "rubberband-selection-for-wpf-listbox",
+    "title": "Rubberband Selection for WPF\u00a0Listbox.",
+    "excerpt": "\t\t\t\n Introduction\u00a0\nThe article describes how to implement Rubberband behavior for WPF Listbox. Also it describes how to add this behavior using Expression Blend (Read more\u2026)\n\n\n\n\n\n\n\n\t\t\t",
+    "tags": [],
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2012/06/a4268-rubberband.png"
+  },
+  {
+    "tags": [],
+    "featuredImage": "http://i.msdn.microsoft.com/dynimg/IC576244.png",
+    "published_date": "2012-09-25T00:00:00.000Z",
+    "postId": "search-contract-for-windows-store-apps",
+    "title": "Search contract for Windows store\u00a0apps",
+    "excerpt": "\t\t\tA contract is like an agreement between one or more apps. Contracts define the requirements that apps must meet to participate in these unique Windows interactions.\nFor XAML Metro style apps, the Windows.UI.Xaml.Application class does a lot of the work needed for your app to support activation. T"
+  },
+  {
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2012/08/e2dc8-screenshot_08122012_031904.png?w=300",
+    "published_date": "2012-08-12T00:00:00.000Z",
+    "postId": "show-alert-dialog-in-windows-8-xaml-app",
+    "title": "Show Alert dialog in Windows 8 XAML\u00a0App",
+    "excerpt": "\t\t\tIt is a well known fact, that Windows 8 UI is flat, chromeless and clean. Every single pixel on the screen is there to represent your information. App will be taken up\u00a0the entire screen. Showing alert windows to users is more trivial for an App developer. But I am sure it is not possible to show ",
+    "tags": []
+  },
+  {
+    "postId": "silverlight-like-data-validation-in-winrt",
+    "title": "Silverlight like Data Validation in\u00a0WinRT",
+    "excerpt": "\t\t\tAccording to a recent MSDN.com forum discussion, Silverlight-like data validation is not available in WinRT. Syncfusion\u2019s editor controls, however, do have built-in options to achieve such data validation. In Silverlight, data is validated by using the IDataErrorInfo interface. With Syncfusion Wi",
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2013-03-25T00:00:00.000Z"
+  },
+  {
+    "tags": [],
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2012/09/splashscreen.png",
+    "published_date": "2012-09-27T00:00:00.000Z",
+    "postId": "splash-screen-for-windows-8",
+    "title": "Splash screen for Windows\u00a08",
+    "excerpt": "\t\t\tWhen users launch an app, they are immediately welcome by the splash screen. Every Windows 8 app has a splash screen, which consists of a 620\u00d7300 image and solid background color. Windows presents the splash screen on your behalf in order to welcome users while your app is activated. The activate"
+  },
+  {
+    "postId": "syncfusion-radial-menu-command-binding",
+    "title": "Syncfusion Radial Menu Command\u00a0binding",
+    "excerpt": "\t\t\tRadial Menu has the ability to add items through ItemsSource property. A collection of different types of objects can be added into the Items collection. If the ItemsSource is not null, the items in the items property are read-only. You cannot add an object or change the objects in the Items prop",
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2013-04-02T00:00:00.000Z"
+  },
+  {
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2012-10-27T00:00:00.000Z",
+    "postId": "syncfusion-released-beta-version-of-winrt-controls",
+    "title": "Syncfusion released Beta version of WinRT\u00a0controls",
+    "excerpt": "\t\t\tSyncfusion now come up with a pack of WinRT XAML controls, which includes high performance chart, maps, diagram, radial menu, etc. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps. The studio for WinRT can be downloaded from th",
+    "tags": []
+  },
+  {
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2013-05-01T00:00:00.000Z",
+    "postId": "text-binding-to-winrt-richtextblock",
+    "title": "Text binding to WinRT\u00a0RichTextBlock",
+    "excerpt": "\t\t\t\nNormally it is not possible to bind text to WinRT RichTextBlock as we do for TextBlock. RichTextBlock is devoid of Text dependency property. So the only way is to populate the Blocks property with paragraphs in code behind. But by simply declaring an attached property, we can achieve binding to ",
+    "tags": []
+  },
+  {
+    "title": "Texture background in\u00a0WPF",
+    "excerpt": "\t\t\tSeems my first blog is this. I am enjoying working with WPF. Whenever I am creating a simple or large scale application, I like to use texture backgrounds other than plane background. Becacuse it looks crispy and makes our application more beautiful. So I want to show you how to create a texture ",
+    "tags": [],
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2011/09/e388a-sshot-8.png?w=300",
+    "published_date": "2011-09-15T00:00:00.000Z",
+    "postId": "texture-background-in-wpf"
+  },
+  {
+    "postId": "the-art-of-polyglot-programming",
+    "title": "The art of Polyglot Programming",
+    "featuredImage": "https://storage.googleapis.com/jawahar-tech/polyglot/octopus.jpg",
+    "excerpt": "Years back in 2013, I was working in a Hospitality management system. The application was used by front desk staff in star hotels. It helps to check in or check out rooms, book appointments and offer several other services. The entire application was",
+    "published_date": "2019-08-12T14:48:26.982Z"
+  },
+  {
+    "featuredImage": "https://storage.googleapis.com/jawahar-tech/1560609621080.png",
+    "published_date": "2019-04-28T18:30:00.000Z",
+    "postId": "the-elm-architecture",
+    "title": "The Elm Architecture\n",
+    "excerpt": "Elm is a functional programming language that used to develop frontend applications. Even though you don't use Elm at work, understanding Elm architecture will help you to learn functional reactive programming (FRP) at high level. One of the most popular state management framework - Redux actually i",
+    "tags": []
+  },
+  {
+    "postId": "touch-and-hold-gesture-awaitable",
+    "title": "Touch and Hold Gesture \u2013\u00a0Awaitable",
+    "excerpt": "\t\t\tTouch and Hold gesture can not be identified using\u00a0any built-in API. Surface SDKs may provide one. But I will show a simple awaitable way to detect this gesture. Using a timer, we can wait for a particular seconds and return the method once the timer elapsed. If user took his hand before timer el",
+    "tags": [
+      "async",
+      "await",
+      "hold",
+      "touch",
+      "wpf",
+      "xaml"
+    ],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2014-08-07T00:00:00.000Z"
+  },
+  {
+    "title": "Touch gesture in WPF scroll\u00a0viewer",
+    "excerpt": "\t\t\t\nWPF 4.0 comes up with attractive features. One of them is Multi touch. We can play with WPF scroll viewer using\u00a0 finger. Setting the property PanningMode will do the magic.\n\u00a0\u00a0\u00a0<ScrollViewer\u00a0PanningMode=\"Both\"\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0HorizontalScrollBarVisibility=\"Auto\"\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0VerticalScrollBarVisibi",
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2011-09-16T00:00:00.000Z",
+    "postId": "touch-gesture-in-wpf-scroll-viewer"
+  },
+  {
+    "title": "Visual Tree Helpers",
+    "excerpt": "\t\t\tWPF User Interface is\u00a0represented in a way of tree.\u00a0There are two ways that the complete object tree is conceptualized and can be reported to its public API: as the logical tree and as the visual tree. The Logical tree does not contain the core controls of WPF. For example, the child object of a ",
+    "tags": [
+      "logical tree",
+      "tree system",
+      "visual tree",
+      "wpf",
+      "xaml"
+    ],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2014-07-28T00:00:00.000Z",
+    "postId": "visual-tree-helpers"
+  },
+  {
+    "tags": [
+      "behavior",
+      "textbox",
+      "watermark",
+      "wpf"
+    ],
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2014/06/watermark.png",
+    "published_date": "2014-06-30T00:00:00.000Z",
+    "postId": "watermark-behavior-for-textbox",
+    "title": "Watermark Behavior for\u00a0Textbox",
+    "excerpt": "\t\t\tIt is obvious that there is no direct way to set Watermark in WPF textboxes. Some third party controls and codeplex gave extended textboxes which supports watermark. Watermark can also be achieved through overriding the default style of a textbox. A textblock/Label needs to be inserted in default"
+  },
+  {
+    "tags": [
+      "locator",
+      "mvvm",
+      "PRISM",
+      "unity",
+      "view",
+      "viewmodel",
+      "wpf"
+    ],
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2014/12/mvvm1.png",
+    "published_date": "2014-12-04T00:00:00.000Z",
+    "postId": "whats-new-in-prism-5-0-viewmodel-locator",
+    "title": "Whats new in PRISM 5.0 \u2013 ViewModel\u00a0Locator",
+    "excerpt": "\t\t\tViewModels are usually resolved and injected through DI containers. We will set the viewmodel as DataContext of View. But\u00a0still there are some frameworks like Caliburn Micro who provided a conventional way of resolving the view models. Now Microsoft added this feature into the PRISM framework. Th"
+  },
+  {
+    "tags": [
+      "binding",
+      "BlackoutDates",
+      "datepicker",
+      "wpf",
+      "xaml"
+    ],
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2014/07/datepicker.png",
+    "published_date": "2014-07-28T00:00:00.000Z",
+    "postId": "wpf-datepicker-blackoutdates-data-binding",
+    "title": "WPF DatePicker \u2013 BlackOutDates Data\u00a0Binding",
+    "excerpt": "\t\t\tA problem with DatePicker is that BlackoutDates collection cannot be initalized without a Calendar instance. So in MVVM environment, it is bit hard to bind BlackoutDates dynamically. But attached properties are a handy way to handle these type of situations. An attached property of type List<Date"
+  },
+  {
+    "featuredImage": "http://www.codeproject.com/KB/WPF/741026/flipview.png",
+    "published_date": "2014-03-09T00:00:00.000Z",
+    "postId": "wpf-flipview",
+    "title": "WPF FlipView",
+    "excerpt": "\t\t\tFlipView control behaves like an ItemsControl and shows items one by one on swipe gesture. Also navigation buttons will be available to navigate using mouse. Many users nowadays expecting Windows store touch apps to be developed using WPF. That doesn\u2019t require to be published on store for distrib",
+    "tags": [
+      "animation",
+      "flipview",
+      "wpf",
+      "xaml"
+    ]
+  },
+  {
+    "title": "WPF rendering engine.",
+    "excerpt": "\t\t\t  \nWPF Rendering Engine\n\nWindows Presentation Foundation (WPF) is graphical display system for Windows Operating System. WPF hit the Windows users and Market, because of its high level Graphical rendering when compared to primitive graphical applications. Before .Net 3.0 it is not possible to cre",
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2011-12-29T00:00:00.000Z",
+    "postId": "wpf-rendering-engine"
+  },
+  {
+    "tags": [],
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2013/05/ca4f8-demo.png",
+    "published_date": "2013-05-28T00:00:00.000Z",
+    "postId": "wpf-richtextbox-supporting-smileys",
+    "title": "WPF RichTextBox supporting\u00a0smileys",
+    "excerpt": "\t\t\tAn editor supporting smileys is most important feature nowadays. Any chat editors should render smileys from a piece of text. For example, \u201c:)\u201d\u00a0denotes a smiling face. This article helps you to create an extended rich text editor which support smileys. [Read more]\n\n\n\t\t\t"
+  },
+  {
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2014/03/demo3.png",
+    "published_date": "2014-03-05T00:00:00.000Z",
+    "postId": "wpf-style-inheritance",
+    "title": "WPF Style Inheritance",
+    "excerpt": "\t\t\tA style in WPF can be inherited. Usually, in real world scenarios most of the theme related styles will be merged in App.xaml. In such cases, if style needs to be defined again in scope of a view. That particular style will override the style defined in App. For example, the following style for L",
+    "tags": [
+      "based on",
+      "inheritance",
+      "style",
+      "wpf",
+      "xaml"
+    ]
+  },
+  {
+    "featuredImage": "http://lh5.ggpht.com/-VRpjFrDEIA0/Uhi4n8O1Y4I/AAAAAAAABTM/Mnkm6ii2fs4/Capture_thumb%25255B6%25255D.png?imgmax=800",
+    "published_date": "2013-08-24T00:00:00.000Z",
+    "postId": "10-steps-to-consume-sqlite-in-wpf",
+    "title": "10 Steps to consume SQLite in\u00a0WPF",
+    "excerpt": "\t\t\tSQL Lite is the compact database system used by more client applications to manage local data. It is more lightweight and easy to use. This article will explain how to create SQL Lite DB and connect it to a WPF client application. Let\u2019s create a simple client app which read employees data from lo",
+    "tags": []
+  },
+  {
+    "published_date": "2014-12-02T00:00:00.000Z",
+    "postId": "5-tricks-you-dont-know-in-wpf",
+    "title": "5 Tricks you should know in WPF \u2013 PART\u00a01",
+    "excerpt": "\t\t\t1. Write C# Code in XAML\nWe all know that XAML is a design language which helps in building user interface. But how many of us know, that, it is possible to write C# code inside XAML. This can be achived using x:Code. This attribute allows placement of code within a XAML production.\nThe code with",
+    "tags": [
+      "cdata",
+      "code",
+      "design",
+      "namespace",
+      "tips",
+      "tricks",
+      "wpf",
+      "x:Name",
+      "xaml"
+    ],
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2014/12/linqtotree.png"
+  },
+  {
+    "tags": [
+      "fallbackvalue",
+      "priority binding",
+      "reference",
+      "targetnullvalue",
+      "textblock",
+      "wpf",
+      "xaml"
+    ],
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2014/12/window.png",
+    "published_date": "2014-12-05T00:00:00.000Z",
+    "postId": "5-tricks-you-should-know-in-wpf-part-2",
+    "title": "5 Tricks you should know in WPF \u2013 PART\u00a02",
+    "excerpt": "\t\t\t1. TextBlock is not just for Text\nWe all know that TextBlock is an UI control, which will carry a piece of text. But actually MSDN explains it in a bit different way.\nProvides a lightweight control for displaying small amounts of flow content.\nFlow Content !!!, which not means only text. Lets loo"
+  },
+  {
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2014-01-18T00:00:00.000Z",
+    "postId": "accentbrush-for-wpf-metro-theme",
+    "title": "AccentBrush for WPF Metro\u00a0Theme",
+    "excerpt": "\t\t\tMah Apps provide a very easy way to style any WPF applications with Metro theme. They provided 22 different accent colours and two themes dark and light. Just by merging the resources in App.Resources, your app will look pretty much like Metro app.\n<ResourceDictionary> <ResourceDictionary.MergedD",
+    "tags": [
+      "mahapps change vs theme"
+    ]
+  },
+  {
+    "title": "Attached Properties VS\u00a0Behaviors",
+    "excerpt": "\t\t\tOne of the powerful concept of WPF is Attached Properties. The primary purpose of attached property is to define a unique value to child elements for a property, which is defined in Parent element as MSDN suggests. Some of the typical examples are Grid.Row, DockPanel.Dock, etc.\nBut it can also be",
+    "tags": [
+      "attached properties",
+      "behavior",
+      "wpf",
+      "xaml"
+    ],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2014-12-16T00:00:00.000Z",
+    "postId": "attached-properties-vs-behaviors"
+  },
+  {
+    "title": "Awaitable storyboard in\u00a0WPF",
+    "excerpt": "\t\t\tNormally when\u00a0a storyboard is running, setting the FillBehavior (Learn more about FillBehavior) to HoldEnd is risk. Because\u00a0for a dependency property, storyboard is considered to have highest priority of setting the value. So once storyboard is done, user cannot change its value locally. So users",
+    "tags": [
+      "animation",
+      "async",
+      "asynchronous",
+      "await",
+      "storyboard",
+      "wpf",
+      "xaml"
+    ],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2014-07-28T00:00:00.000Z",
+    "postId": "awaitable-storyboard-in-wpf"
+  },
+  {
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2012/05/ee31a-sshot-11.png",
+    "published_date": "2012-05-05T00:00:00.000Z",
+    "postId": "bind-system-font-families-to-combo-box-in-xaml",
+    "title": "Bind System Font Families to Combo Box in\u00a0XAML.",
+    "excerpt": "\t\t\t\nPopulating the WPF ComboBox with System Font Families is so easy and can be done in XAML without code behind.\n<ComboBox\u00a0x:Name=\"fonts\"\u00a0          Width=\"200\"\u00a0          ItemsSource=\"{Binding\u00a0Source={x:Static\u00a0Member=Fonts.SystemFontFamilies}}\"\u00a0/>\n\nAlso to show each Font Item with its own correspond",
+    "tags": []
+  },
+  {
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2012-10-03T00:00:00.000Z",
+    "postId": "building-a-deployable-custom-control-for-xaml-metro-style-apps",
+    "title": "Building a deployable custom control for XAML Metro style\u00a0apps",
+    "excerpt": "\t\t\t\nTim Heuer wrote a very nice article about deployment of custom control for WinRT.\nAt //build one of the surprising immediate things I heard about was folks wanting to build custom controls right away. \u00a0I knew that would happen, but not so quick on something so new (WinRT). \u00a0The XAML platform did",
+    "tags": []
+  },
+  {
+    "title": "C# Text Processing Function\u00a0Library",
+    "excerpt": "\t\t\t  \nString Functions in C#.NET\n\nC#.NET comes with a lot of great string processing functions like Substring, Compare, IndexOf. But the truth is the built-in .NET string functions are very limited. Programmers constantly have to rewrite similar text processing functions over and over.\nLuckily we ca",
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2011-10-01T00:00:00.000Z",
+    "postId": "c-text-processing-function-library"
+  },
+  {
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2012-04-28T00:00:00.000Z",
+    "postId": "capture-screenshot-in-wpf",
+    "title": "Capture Screenshot in\u00a0WPF",
+    "excerpt": "\t\t\tCapturing screen shot in Windows Forms is\u00a0straight\u00a0forward. But in WPF, we need some Pinvoke calls. We going to use the methods from User32.dll and gdi32.dll. For more reference about available methods in User32.dll, go through here.\n\n\u00a0public\u00a0class\u00a0InteropHelper\u00a0\u00a0\u00a0\u00a0{\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0[DllImport(\"user32.dll"
+  },
+  {
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2012-04-28T00:00:00.000Z",
+    "postId": "change-windows-cursor-globally-in-wpf",
+    "title": "Change Windows cursor globally in\u00a0WPF",
+    "excerpt": "\t\t\tIt is very obvious that we can change the cursor in WPF using FrameworkElement.Cursor. But the trick is, it only works within your application and not outside your application Main Window. In case if you want to change the cursor for the entire OS, we\u00a0don\u2019t\u00a0have any direct way in WPF. But most of",
+    "tags": []
+  },
+  {
+    "published_date": "2012-06-04T00:00:00.000Z",
+    "postId": "character-map-in-wpf",
+    "title": "Character Map in\u00a0WPF",
+    "excerpt": "\t\t\t\nIntroduction\u00a0\u00a0\u00a0\n(View this article in code project)\n\nThe\u00a0Character Map\u00a0utility is free on all Windows machines and can be used to copy and paste accented letters and other foreign language characters into any Windows application. The\u00a0Character Map\u00a0is similar to the\u00a0Insert Symbol\u00a0tool found in so",
+    "tags": [],
+    "featuredImage": "http://www.codeproject.com/KB/WPF/396811/character_map.gif"
+  },
+  {
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2014/03/groupingdemo.png",
+    "published_date": "2014-03-08T00:00:00.000Z",
+    "postId": "collectionviewsource-grouping-selecteditem-problem",
+    "title": "CollectionViewSource Grouping SelectedItem\u00a0Problem",
+    "excerpt": "\t\t\tToday I just came across a problem in ListBox, probably with all Selectors. When you bind a CollectionView object which has GroupDescriptions added as below, the first item of Selector will set to be selected by default without user interaction.\n<CollectionViewSource x:Key=\"source\" Source=\"{Bindi",
+    "tags": [
+      "binding",
+      "collectionview",
+      "GroupDescriptions",
+      "grouping",
+      "listbox",
+      "selected item",
+      "wpf"
+    ]
+  },
+  {
+    "title": "Customize System Menu in\u00a0WPF.",
+    "excerpt": "\t\t\tMost of the times, I wonder how System Menu in Native Window has been replaced with custom Menu in WPF. Finally I found the trick. I just want to share the idea here.\nNormally WPF does not allow direct customization to Non-client area of Window. But that can be done using native methods. We need ",
+    "tags": [],
+    "featuredImage": "image/png;base64,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",
+    "published_date": "2012-01-25T00:00:00.000Z",
+    "postId": "customize-system-menu-in-wpf"
+  },
+  {
+    "published_date": "2018-11-12T18:30:00.000Z",
+    "postId": "dependency-inversion-a-real-world-comparison",
+    "title": "Dependency Inversion - a real world comparison.",
+    "excerpt": "Let me start with a story.Bob need a new assistant for his startup. He hired Janice. Bob wanted Janice to concentrate more on the paper work. One day Bob wanted print outs of some old invoices. Janice collected those invoices. She then get a new printer from the store and get those invoices printed.",
+    "tags": [],
+    "featuredImage": "https://storage.googleapis.com/jawahar-tech/1560609620255.jpg"
+  },
+  {
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2011-09-17T00:00:00.000Z",
+    "postId": "detect-capslock-status-in-c",
+    "title": "Detect CapsLock Status in\u00a0C#",
+    "excerpt": "\t\t\tAll usual registration forms will contain a password edit and users has to be warned for the Caps Lock state. So it is pretty easy in C# to check this. The following line will do the magic.\n\nif\u00a0(Console.CapsLock){\u00a0\u00a0\u00a0 Console.WriteLine(\"CapsLock\u00a0On!!!\");}\nHappy C#\u2026..\n\n\n\t\t\t"
+  },
+  {
+    "title": "Different sized tile items in WinRT\u00a0GridView",
+    "excerpt": "\t\t\tGridView in WinRT allows you to arrange tile items in wrap manner. In case, if you want to arrange items as in Windows store app, we need different sized tile items. There is no direct way to configure different sized items while using data binding in Grid View. I am going to explain the solution",
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2013-03-13T00:00:00.000Z",
+    "postId": "different-sized-tile-items-in-winrt-gridview"
+  },
+  {
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2011-10-01T00:00:00.000Z",
+    "postId": "digging-into-user32-dll",
+    "title": "Digging into user32.dll.",
+    "excerpt": "\t\t\tMost of the times, we need to interact with native windows actions in WPF or Win Forms. C# provides a better way to import an assembly dynamically and we can effectively use the methods of native System assembly.\u00a0\n\n\u00a0       class\u00a0Example\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0{\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0//\u00a0Use\u00a0DllImport\u00a0to\u00a0import\u00a0the\u00a0Win32\u00a0Mes"
+  },
+  {
+    "tags": [],
+    "featuredImage": "http://lh5.ggpht.com/-CwW_It4w_a0/UX4NJI3-kmI/AAAAAAAABQU/gtcq0s1ZKAI/image_thumb10.png?imgmax=800",
+    "published_date": "2013-04-29T00:00:00.000Z",
+    "postId": "enum-to-combobox-binding",
+    "title": "Enum to ComboBox\u00a0binding",
+    "excerpt": "\t\t\tAny real world appliation would like bind the Enum values to a ComboBox. So it is always better to have common code that will do the logic. Below, I have a helper class which exposed a property to get the enum type, so that I can resolve the enum values.\n\n\n   1: public static Type GetEnum(Depende"
+  },
+  {
+    "featuredImage": "http://www.codeproject.com/KB/WPF/374887/Eyedropper_control.png",
+    "published_date": "2012-04-28T00:00:00.000Z",
+    "postId": "eye-dropper-control-in-wpf",
+    "title": "Eye Dropper control in\u00a0WPF",
+    "excerpt": "\t\t\t\n   Introduction\u00a0\n(View this article in Code Project)\n\nUsually we come across different types of eye dropper controls in designers. We can move the mouse over the desktop and other applications to pick the color under the mouse.\u00a0A normal eye dropper will pick color only within the application lik",
+    "tags": []
+  },
+  {
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2011/10/ee4b5-14.jpg?w=300",
+    "published_date": "2011-10-01T00:00:00.000Z",
+    "postId": "finding-memory-leaks-in-wpf-based-applications",
+    "title": "Finding Memory Leaks in WPF-based\u00a0applications",
+    "excerpt": "\t\t\t\n\n  \nThere are numbers of blogs that folks wrote about memory leaks in Microsoft .Net Framework managed code and unmanaged code based applications. \nThis blog,\n\nShow coding practices      that can cause memory leaks which are more unique to WPF-base apps \nShare information about      memory leaks",
+    "tags": []
+  },
+  {
+    "postId": "finite-state-machine-flutter",
+    "title": "Finite State Machine in Flutter",
+    "featuredImage": "https://storage.googleapis.com/jawahar-tech/fsm/traffic_light.jpg",
+    "excerpt": "Have you ever worked with a system, where it often end up in an unexpected state? For example, how about displaying both play and pause button at the same time in a media player. What about both red and green lights glowing at the sme time or an oran",
+    "published_date": "2019-08-26T14:01:18.558Z"
+  },
+  {
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2013-05-06T00:00:00.000Z",
+    "postId": "gif-animation-in-wpf",
+    "title": "GIF Animation in\u00a0WPF",
+    "excerpt": "\t\t\tGIF images cannot be used directly in a WPF application. There are lot of third party libraries which support GIF images in WPF. Here is one which could play animated sprite sheets in WPF. [Read more]\n\t\t\t"
+  },
+  {
+    "title": "Golang way of inheritance",
+    "excerpt": "Go claims itself as an object oriented programming language. Of course it is. But developers who came from Java or C#, would realise that OOPS in Go is not same as other languages. Let's see how Golang handles Inheritance.Inheritance - From Wikipedia - the mechanism of basing an object or class upon",
+    "tags": [],
+    "featuredImage": "https://storage.googleapis.com/jawahar-tech/1560609620174.png",
+    "published_date": "2019-02-21T18:30:00.000Z",
+    "postId": "golang-inheritance-vs-composition"
+  },
+  {
+    "title": "Handling orientation changes in Windows\u00a08",
+    "excerpt": "\t\t\tDisplayProperties class provides various properties that are related to the physical display. For most of these properties, the class provides events to allow clients to monitor for changes in the properties.\nRespond to the static OrientationChanged event. Determine the orientation from the Curre",
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2012-09-26T00:00:00.000Z",
+    "postId": "handling-orientation-changes-in-windows-8"
+  },
+  {
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2011-10-01T00:00:00.000Z",
+    "postId": "how-to-process-waiting-window-messages-during-a-loop",
+    "title": "How to process waiting window messages during a\u00a0loop?",
+    "excerpt": "\t\t\t\nThe standard way of\u00a0allowing Windows messages to be processed is to call Application.DoEvents  method. However, the Application class in WPF does not have a DoEvents  method. So, what you need\u00a0is to find a way of calling this method,\u00a0or an  alternative method! Actually, it is surprisingly easy t"
+  },
+  {
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2014-01-18T00:00:00.000Z",
+    "postId": "invokecommandaction-with-eventargs-as-command-parameter",
+    "title": "InvokeCommandAction with EventArgs as Command\u00a0Parameter",
+    "excerpt": "\t\t\tExpression Blend team provides the ability to wire up some events to viewmodel through commands like SelectionChanged of a ListBox, etc using System.Windows.Interactivity.dll. You can bind a Command to any event with WPF controls. There is also a way to bind command parameter also, so that view s"
+  },
+  {
+    "title": "Javascript - Asynchronous Programming",
+    "excerpt": "Asynchronous programming becomes unavoidable in todays programming. In this article, I would like to talk about, how Javascript evolved to handle asynchronous programming using callbacks. What is a callback? Consider a scenario of a candidate who attends an interview in a reputed organisation. Once ",
+    "tags": [],
+    "featuredImage": "https://storage.googleapis.com/jawahar-tech/1560609617249.jpg",
+    "published_date": "2018-05-09T18:30:00.000Z",
+    "postId": "javascript-asynchronous-programming"
+  },
+  {
+    "featuredImage": "https://storage.googleapis.com/jawahar-tech/1560609621463.jpg",
+    "published_date": "2018-06-06T18:30:00.000Z",
+    "postId": "javascript-compiled-or-interpreted",
+    "title": "Javascript - Compiled or Interpreted?",
+    "excerpt": "I started my career with .NET. I was a WPF developer and use Visual Studio as the primary IDE. Though I am a desktop application developer, I was aware of JavaScript programming. But I thought Javascript is a toy language and its primary purpose is to manipulate web pages.But the evolution of Javasc",
+    "tags": []
+  },
+  {
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2012-12-20T00:00:00.000Z",
+    "postId": "mvvm-adapter-for-syncfusion-wpf-docking-manager",
+    "title": "MVVM Adapter for Syncfusion WPF Docking\u00a0Manager",
+    "excerpt": "\t\t\tThis article explains how to adapt the Syncfusion docking manager to an MVVM application. Since our WPF Docking Manager is not an item control, it is not possible to have a traditional item-source binding to a collection of objects in the view model. This can, however, be achieved by creating a w",
+    "tags": []
+  },
+  {
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2014/06/navigation.png",
+    "published_date": "2014-06-04T00:00:00.000Z",
+    "postId": "navigation-model-for-simple-mvvm-applications",
+    "title": "Navigation Model for simple MVVM\u00a0applications",
+    "excerpt": "\t\t\tNot all the WPF applications are huge. A very few are still used as utilities, installers and simple tools to achieve a specific task. Navigation is very trivial in applications. PRISM supports a very nice navigation framework.\u00a0To develop such simple WPF applications, developers really hesitate t",
+    "tags": [
+      "mvvm",
+      "navigation",
+      "PRISM",
+      "wpf"
+    ]
+  },
+  {
+    "title": "No more Dangling Pointers with Rust",
+    "featuredImage": "https://storage.googleapis.com/jawahar-tech/dangling_pointer/dangling_pointer_banner.jpg",
+    "excerpt": "In programming memory can be categorised into two - Static and dynamic memory.When memory size of the variables are known at compile time, we call that as static memory. For example primitive data types like int, floats and arrays are fixed size. Fix",
+    "published_date": "2019-07-31T16:25:18.752Z",
+    "postId": "no-more-dangling-pointers-with-rust"
+  },
+  {
+    "featuredImage": "http://www.codeproject.com/KB/silverlight/320232/Checkbox.png",
+    "published_date": "2012-01-26T00:00:00.000Z",
+    "postId": "notification-control-in-silverlight",
+    "title": "Notification Control in\u00a0Silverlight.",
+    "excerpt": "\t\t\t\nIntroduction\n(View this article in Code Project)\n\nWe used to see a Notification tool tip in Windows 7/Vista to inform something  about particular context. For example, Capslock warning will be given through a  balloon tip on Passwordbox, if capslock has ON. Or sometimes low battery  information ",
+    "tags": []
+  },
+  {
+    "published_date": "2014-11-24T00:00:00.000Z",
+    "postId": "on-demand-tooltip-for-wpf-textblock",
+    "title": "On Demand Tooltip for WPF\u00a0TextBlock",
+    "excerpt": "\t\t\tAccording to\u00a0MSDN, a tooltip\n\nRepresents a small rectangular pop-up window that displays a brief description of a control\u2019s purpose when the user rests the pointer on the control.\n\nSetting a tooltip is really easy with WPF controls.\n<Button Content=\"Save\"        ToolTip=\"Save the contents\" />\nBut",
+    "tags": [
+      "text",
+      "tooltip",
+      "wpf",
+      "xaml"
+    ],
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2014/11/textbox.png"
+  },
+  {
+    "tags": [],
+    "featuredImage": "https://storage.googleapis.com/jawahar-tech/1560609615997.jpg",
+    "published_date": "2019-02-16T18:30:00.000Z",
+    "postId": "oops-attribute-vs-state",
+    "title": "OOPS - Attribute vs State",
+    "excerpt": "In Object oriented programming objects are the fundamental unit. Usually an object is defined to have two characteristics. State and behaviorState is defined through variables, properties or functions (getter and setter) depends on the language. Behavior is usually defined through functions. Most of"
+  },
+  {
+    "postId": "order-does-matter-for-wpf-triggers",
+    "title": "Order does matter for WPF\u00a0Triggers",
+    "excerpt": "\t\t\tWhen applying style for a ListBoxItem, today I come across a weird problem. I have trigger for both Mouse over and Selected. On selected, the item should goLightBlue and Gray on mouse hover. But when user clicks an item, it gets selected. But still the color remains Gray. But when user leaves the",
+    "tags": [
+      "trigger",
+      "wpf",
+      "xaml"
+    ],
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2014/01/sshot-5.png?w=300",
+    "published_date": "2014-01-22T00:00:00.000Z"
+  },
+  {
+    "tags": [],
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2012/05/a93e7-sshot-7.png?w=300",
+    "published_date": "2012-05-04T00:00:00.000Z",
+    "postId": "registering-a-custom-file-extension-in-windows",
+    "title": "Registering a custom file extension in\u00a0Windows",
+    "excerpt": "\t\t\tMost of the real world applications need custom file extensions. Double clicking the file with such extension should be opened with particular application. This article explaining how to register a custom file extension in Windows 7. Custom file extensions normally resides in registry under the f"
+  },
+  {
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2012/06/a4268-rubberband.png",
+    "published_date": "2012-06-16T00:00:00.000Z",
+    "postId": "rubberband-selection-for-wpf-listbox",
+    "title": "Rubberband Selection for WPF\u00a0Listbox.",
+    "excerpt": "\t\t\t\n Introduction\u00a0\nThe article describes how to implement Rubberband behavior for WPF Listbox. Also it describes how to add this behavior using Expression Blend (Read more\u2026)\n\n\n\n\n\n\n\n\t\t\t",
+    "tags": []
+  },
+  {
+    "tags": [],
+    "featuredImage": "http://i.msdn.microsoft.com/dynimg/IC576244.png",
+    "published_date": "2012-09-25T00:00:00.000Z",
+    "postId": "search-contract-for-windows-store-apps",
+    "title": "Search contract for Windows store\u00a0apps",
+    "excerpt": "\t\t\tA contract is like an agreement between one or more apps. Contracts define the requirements that apps must meet to participate in these unique Windows interactions.\nFor XAML Metro style apps, the Windows.UI.Xaml.Application class does a lot of the work needed for your app to support activation. T"
+  },
+  {
+    "postId": "show-alert-dialog-in-windows-8-xaml-app",
+    "title": "Show Alert dialog in Windows 8 XAML\u00a0App",
+    "excerpt": "\t\t\tIt is a well known fact, that Windows 8 UI is flat, chromeless and clean. Every single pixel on the screen is there to represent your information. App will be taken up\u00a0the entire screen. Showing alert windows to users is more trivial for an App developer. But I am sure it is not possible to show ",
+    "tags": [],
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2012/08/e2dc8-screenshot_08122012_031904.png?w=300",
+    "published_date": "2012-08-12T00:00:00.000Z"
+  },
+  {
+    "published_date": "2013-03-25T00:00:00.000Z",
+    "postId": "silverlight-like-data-validation-in-winrt",
+    "title": "Silverlight like Data Validation in\u00a0WinRT",
+    "excerpt": "\t\t\tAccording to a recent MSDN.com forum discussion, Silverlight-like data validation is not available in WinRT. Syncfusion\u2019s editor controls, however, do have built-in options to achieve such data validation. In Silverlight, data is validated by using the IDataErrorInfo interface. With Syncfusion Wi",
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg"
+  },
+  {
+    "title": "Splash screen for Windows\u00a08",
+    "excerpt": "\t\t\tWhen users launch an app, they are immediately welcome by the splash screen. Every Windows 8 app has a splash screen, which consists of a 620\u00d7300 image and solid background color. Windows presents the splash screen on your behalf in order to welcome users while your app is activated. The activate",
+    "tags": [],
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2012/09/splashscreen.png",
+    "published_date": "2012-09-27T00:00:00.000Z",
+    "postId": "splash-screen-for-windows-8"
+  },
+  {
+    "title": "Syncfusion Radial Menu Command\u00a0binding",
+    "excerpt": "\t\t\tRadial Menu has the ability to add items through ItemsSource property. A collection of different types of objects can be added into the Items collection. If the ItemsSource is not null, the items in the items property are read-only. You cannot add an object or change the objects in the Items prop",
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2013-04-02T00:00:00.000Z",
+    "postId": "syncfusion-radial-menu-command-binding"
+  },
+  {
+    "title": "Syncfusion released Beta version of WinRT\u00a0controls",
+    "excerpt": "\t\t\tSyncfusion now come up with a pack of WinRT XAML controls, which includes high performance chart, maps, diagram, radial menu, etc. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps. The studio for WinRT can be downloaded from th",
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2012-10-27T00:00:00.000Z",
+    "postId": "syncfusion-released-beta-version-of-winrt-controls"
+  },
+  {
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2013-05-01T00:00:00.000Z",
+    "postId": "text-binding-to-winrt-richtextblock",
+    "title": "Text binding to WinRT\u00a0RichTextBlock",
+    "excerpt": "\t\t\t\nNormally it is not possible to bind text to WinRT RichTextBlock as we do for TextBlock. RichTextBlock is devoid of Text dependency property. So the only way is to populate the Blocks property with paragraphs in code behind. But by simply declaring an attached property, we can achieve binding to "
+  },
+  {
+    "tags": [],
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2011/09/e388a-sshot-8.png?w=300",
+    "published_date": "2011-09-15T00:00:00.000Z",
+    "postId": "texture-background-in-wpf",
+    "title": "Texture background in\u00a0WPF",
+    "excerpt": "\t\t\tSeems my first blog is this. I am enjoying working with WPF. Whenever I am creating a simple or large scale application, I like to use texture backgrounds other than plane background. Becacuse it looks crispy and makes our application more beautiful. So I want to show you how to create a texture "
+  },
+  {
+    "title": "The art of Polyglot Programming",
+    "excerpt": "Years back in 2013, I was working in a Hospitality management system. The application was used by front desk staff in star hotels. It helps to check in or check out rooms, book appointments and offer several other services. The entire application was",
+    "featuredImage": "https://storage.googleapis.com/jawahar-tech/polyglot/octopus.jpg",
+    "published_date": "2019-08-12T14:48:26.982Z",
+    "postId": "the-art-of-polyglot-programming"
+  },
+  {
+    "title": "The Elm Architecture\n",
+    "excerpt": "Elm is a functional programming language that used to develop frontend applications. Even though you don't use Elm at work, understanding Elm architecture will help you to learn functional reactive programming (FRP) at high level. One of the most popular state management framework - Redux actually i",
+    "tags": [],
+    "featuredImage": "https://storage.googleapis.com/jawahar-tech/1560609621080.png",
+    "published_date": "2019-04-28T18:30:00.000Z",
+    "postId": "the-elm-architecture"
+  },
+  {
+    "title": "Touch and Hold Gesture \u2013\u00a0Awaitable",
+    "excerpt": "\t\t\tTouch and Hold gesture can not be identified using\u00a0any built-in API. Surface SDKs may provide one. But I will show a simple awaitable way to detect this gesture. Using a timer, we can wait for a particular seconds and return the method once the timer elapsed. If user took his hand before timer el",
+    "tags": [
+      "async",
+      "await",
+      "hold",
+      "touch",
+      "wpf",
+      "xaml"
+    ],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2014-08-07T00:00:00.000Z",
+    "postId": "touch-and-hold-gesture-awaitable"
+  },
+  {
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2011-09-16T00:00:00.000Z",
+    "postId": "touch-gesture-in-wpf-scroll-viewer",
+    "title": "Touch gesture in WPF scroll\u00a0viewer",
+    "excerpt": "\t\t\t\nWPF 4.0 comes up with attractive features. One of them is Multi touch. We can play with WPF scroll viewer using\u00a0 finger. Setting the property PanningMode will do the magic.\n\u00a0\u00a0\u00a0<ScrollViewer\u00a0PanningMode=\"Both\"\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0HorizontalScrollBarVisibility=\"Auto\"\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0VerticalScrollBarVisibi",
+    "tags": []
+  },
+  {
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2014-07-28T00:00:00.000Z",
+    "postId": "visual-tree-helpers",
+    "title": "Visual Tree Helpers",
+    "excerpt": "\t\t\tWPF User Interface is\u00a0represented in a way of tree.\u00a0There are two ways that the complete object tree is conceptualized and can be reported to its public API: as the logical tree and as the visual tree. The Logical tree does not contain the core controls of WPF. For example, the child object of a ",
+    "tags": [
+      "logical tree",
+      "tree system",
+      "visual tree",
+      "wpf",
+      "xaml"
+    ]
+  },
+  {
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2014/06/watermark.png",
+    "published_date": "2014-06-30T00:00:00.000Z",
+    "postId": "watermark-behavior-for-textbox",
+    "title": "Watermark Behavior for\u00a0Textbox",
+    "excerpt": "\t\t\tIt is obvious that there is no direct way to set Watermark in WPF textboxes. Some third party controls and codeplex gave extended textboxes which supports watermark. Watermark can also be achieved through overriding the default style of a textbox. A textblock/Label needs to be inserted in default",
+    "tags": [
+      "behavior",
+      "textbox",
+      "watermark",
+      "wpf"
+    ]
+  },
+  {
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2014/12/mvvm1.png",
+    "published_date": "2014-12-04T00:00:00.000Z",
+    "postId": "whats-new-in-prism-5-0-viewmodel-locator",
+    "title": "Whats new in PRISM 5.0 \u2013 ViewModel\u00a0Locator",
+    "excerpt": "\t\t\tViewModels are usually resolved and injected through DI containers. We will set the viewmodel as DataContext of View. But\u00a0still there are some frameworks like Caliburn Micro who provided a conventional way of resolving the view models. Now Microsoft added this feature into the PRISM framework. Th",
+    "tags": [
+      "locator",
+      "mvvm",
+      "PRISM",
+      "unity",
+      "view",
+      "viewmodel",
+      "wpf"
+    ]
+  },
+  {
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2014/07/datepicker.png",
+    "published_date": "2014-07-28T00:00:00.000Z",
+    "postId": "wpf-datepicker-blackoutdates-data-binding",
+    "title": "WPF DatePicker \u2013 BlackOutDates Data\u00a0Binding",
+    "excerpt": "\t\t\tA problem with DatePicker is that BlackoutDates collection cannot be initalized without a Calendar instance. So in MVVM environment, it is bit hard to bind BlackoutDates dynamically. But attached properties are a handy way to handle these type of situations. An attached property of type List<Date",
+    "tags": [
+      "binding",
+      "BlackoutDates",
+      "datepicker",
+      "wpf",
+      "xaml"
+    ]
+  },
+  {
+    "title": "WPF FlipView",
+    "excerpt": "\t\t\tFlipView control behaves like an ItemsControl and shows items one by one on swipe gesture. Also navigation buttons will be available to navigate using mouse. Many users nowadays expecting Windows store touch apps to be developed using WPF. That doesn\u2019t require to be published on store for distrib",
+    "tags": [
+      "animation",
+      "flipview",
+      "wpf",
+      "xaml"
+    ],
+    "featuredImage": "http://www.codeproject.com/KB/WPF/741026/flipview.png",
+    "published_date": "2014-03-09T00:00:00.000Z",
+    "postId": "wpf-flipview"
+  },
+  {
+    "title": "WPF rendering engine.",
+    "excerpt": "\t\t\t  \nWPF Rendering Engine\n\nWindows Presentation Foundation (WPF) is graphical display system for Windows Operating System. WPF hit the Windows users and Market, because of its high level Graphical rendering when compared to primitive graphical applications. Before .Net 3.0 it is not possible to cre",
+    "tags": [],
+    "featuredImage": "https://s0.wp.com/i/blank.jpg",
+    "published_date": "2011-12-29T00:00:00.000Z",
+    "postId": "wpf-rendering-engine"
+  },
+  {
+    "title": "WPF RichTextBox supporting\u00a0smileys",
+    "excerpt": "\t\t\tAn editor supporting smileys is most important feature nowadays. Any chat editors should render smileys from a piece of text. For example, \u201c:)\u201d\u00a0denotes a smiling face. This article helps you to create an extended rich text editor which support smileys. [Read more]\n\n\n\t\t\t",
+    "tags": [],
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2013/05/ca4f8-demo.png",
+    "published_date": "2013-05-28T00:00:00.000Z",
+    "postId": "wpf-richtextbox-supporting-smileys"
+  },
+  {
+    "published_date": "2014-03-05T00:00:00.000Z",
+    "postId": "wpf-style-inheritance",
+    "title": "WPF Style Inheritance",
+    "excerpt": "\t\t\tA style in WPF can be inherited. Usually, in real world scenarios most of the theme related styles will be merged in App.xaml. In such cases, if style needs to be defined again in scope of a view. That particular style will override the style defined in App. For example, the following style for L",
+    "tags": [
+      "based on",
+      "inheritance",
+      "style",
+      "wpf",
+      "xaml"
+    ],
+    "featuredImage": "https://wpfplayground.files.wordpress.com/2014/03/demo3.png"
+  }
+]
