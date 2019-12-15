@@ -1,1 +1,1 @@
-# Official repository for jawahar.tech
+# Code repository for jawahar.tech
