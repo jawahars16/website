@@ -37,6 +37,7 @@ class BlogPostTemplate extends React.Component {
               {post.frontmatter.date}
             </p>
           </header>
+          <img src={post.frontmatter.featuredImage.childImageSharp.fluid.src}/>
           <section dangerouslySetInnerHTML={{ __html: post.html }}/>
           <hr
             style={{
@@ -98,8 +99,8 @@ export const pageQuery = graphql`
         description
         featuredImage {
           childImageSharp {
-            fluid(traceSVG: {}) {
-              base64
+            fluid {
+              src
             }
           }
         }

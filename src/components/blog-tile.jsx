@@ -5,6 +5,7 @@ import CardContent from "@material-ui/core/CardContent"
 import Typography from "@material-ui/core/Typography"
 import { CardHeader } from "@material-ui/core"
 import { Link } from "gatsby"
+import Box from "@material-ui/core/Box"
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -19,7 +20,7 @@ const useStyles = makeStyles(theme => ({
     flex: "1 0 auto",
   },
   cover: {
-    width: "30%",
+    width: "25%",
     objectFit: "cover",
     margin: 0,
   },
@@ -51,10 +52,16 @@ export default function BlogTile(props) {
             alt={title}
           />
           <div>
-            <CardHeader title={title} subheader={date}/>
             <CardContent>
+              <Typography variant="h5" >
+                {title}
+              </Typography>
+              <Typography variant="subtitle2" >
+                {date}
+              </Typography>
+              <Box margin={1}/>
               <Typography variant="body1" >
-                {`${excerpt.substring(0, 120)}...`}
+                {`${excerpt.substring(0, 100)}...`}
               </Typography>
             </CardContent>
           </div>

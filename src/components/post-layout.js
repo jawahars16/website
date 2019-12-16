@@ -1,7 +1,7 @@
 import React from "react"
 
 import { rhythm } from "../utils/typography"
-import './layout.css';
+import '../css/main.css';
 
 const styles = {
   navBar: {

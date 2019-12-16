@@ -40,6 +40,7 @@ class LegacyBlogPostTemplate extends React.Component {
               {post.frontmatter.date}
             </p>
           </header>
+          <img src={post.frontmatter.featuredImage}/>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr
             style={{
@@ -99,6 +100,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        featuredImage
       }
     }
   }
