@@ -12,8 +12,12 @@ const getArticles = async graphql => {
               fields {
                 slug
               }
+              excerpt
               frontmatter {
                 title
+                date(formatString: "MMMM DD, YYYY")
+                description
+                featuredImage
               }
             }
           }
@@ -27,8 +31,18 @@ const getArticles = async graphql => {
               fields {
                 slug
               }
+              excerpt
               frontmatter {
                 title
+                date(formatString: "MMMM DD, YYYY")
+                description
+                featuredImage {
+                  childImageSharp {
+                    fluid {
+                      src
+                    }
+                  }
+                }
               }
             }
           }
@@ -45,7 +59,7 @@ const getArticles = async graphql => {
 }
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions
 
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
   const legacyBlogPost = path.resolve(`./src/legacy/legacy-post-template.jsx`)
@@ -66,6 +80,34 @@ exports.createPages = async ({ graphql, actions }) => {
 
   posts.new.forEach((post, index) => constructPage(post, index, blogPost))
   posts.legacy.forEach((post, index) => constructPage(post, index, legacyBlogPost))
+  const allPosts = [...posts.new, ...posts.legacy]
+  createPaginatedPages(allPosts, 0, 1, createPage)
+}
+
+const createPaginatedPages = (posts, offset, pageIndex, createPage) => {
+  const filteredPosts = posts.slice(offset, offset + 5)
+
+  if (filteredPosts.length === 0) {
+    return
+  }
+
+  const component = path.resolve(`./src/templates/index.js`)
+  const url = `blog/${pageIndex}`
+  const next = offset < posts.length && `blog/${pageIndex + 1}`
+  const prev = pageIndex > 1 && `blog/${pageIndex - 1}`
+
+  createPage({
+    path: url,
+    component,
+    context: {
+      posts: filteredPosts,
+      siteMeta: {},
+      next,
+      prev
+    },
+  })
+
+  createPaginatedPages(posts, offset + 5, pageIndex + 1, createPage)
 }
 
 const createUUID = () => {
@@ -121,7 +163,7 @@ exports.onCreateNode = async ({ node, actions, getNode, loadNodeContent }) => {
       description: meta.excerpt,
       date: meta.published_date,
       featuredImage: meta.featuredImage,
-    }
+    },
   }
   createNode(htmlNodeContent)
 }
