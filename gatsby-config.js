@@ -1,14 +1,21 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `Jawahar - Full Stack Developer`,
+    author: `Jawahar`,
+    description: `Jawahar is a Software Programmer who is passionate about learning new languages and frameworks. He has years of experience in building enterprise grade applications using various technologies. He is specifically interested in practicing functional programming with modern language features. He usually shares his learning through blog and talks.`,
+    siteUrl: `https://www.jawahar.tech`,
     social: {
       twitter: `kylemathews`,
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-129105691-1`,
+      },
+    },
+    "gatsby-plugin-sass",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -21,6 +28,19 @@ module.exports = {
       options: {
         path: `${__dirname}/content/legacy/`,
         name: `legacy`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/talks/`,
+        name: `talks`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `jawahar-tech`,
       },
     },
     {
@@ -54,12 +74,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,

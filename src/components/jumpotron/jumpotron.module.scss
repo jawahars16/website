@@ -1,0 +1,28 @@
+@import "../../css/media";
+
+.jumbotron {
+  background-color: #007ACB;
+  padding-top: 47px;
+  padding-bottom: 47px;
+  color: #fff;
+
+  .title {
+    font-size: 16vw;
+    opacity: 0.9;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      box-shadow: none;
+    }
+
+    @include media-query-lap {
+      font-size: 6rem;
+    }
+  }
+
+  .subtitle {
+    margin: 0 16px;
+    opacity: 0.8;
+  }
+}

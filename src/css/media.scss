@@ -1,0 +1,11 @@
+@mixin media-query-palm {
+  @media screen and (min-width: 400px) {
+    @content;
+  }
+}
+
+@mixin media-query-lap {
+  @media screen and (min-width: 600px) {
+    @content;
+  }
+}

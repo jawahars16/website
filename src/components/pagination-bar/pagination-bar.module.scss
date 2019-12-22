@@ -1,0 +1,14 @@
+@import "../../css/variables";
+
+.pagination-bar {
+  background-color: transparent !important;
+  justify-content: space-between !important;
+
+  a {
+    box-shadow: none;
+  }
+
+  svg {
+    color: $primaryColor
+  }
+}

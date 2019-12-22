@@ -30,8 +30,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 $(window).on("load", highlightCode)
+$(window).on("load", lazyLoad)
 $(document).ready(lazyLoad)
 $(window).on("resize", lazyLoad)
-$("html, body").scroll(function() {
+$(document).scroll(function() {
   lazyLoad()
 })

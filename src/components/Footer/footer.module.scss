@@ -1,0 +1,17 @@
+footer {
+  margin: 30px 0 50px 0;
+
+  hr {
+    margin: 16px;
+  }
+}
+
+.footerBar {
+  display: flex;
+  justify-content: space-between;
+  span {
+    margin: 14px 24px;
+    font-size: 14px;
+    opacity: 0.6;
+  }
+}

@@ -1,0 +1,74 @@
+@import 'variables';
+@import "media";
+
+html, body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+
+  main {
+    margin: 0 20px;
+
+    .about p {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1.6em;
+      text-align: justify;
+    }
+  }
+}
+
+article {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+
+  p {
+    text-align: justify;
+  }
+
+  h1 {
+    font-weight: 500 !important;
+    font-size: 30px !important;
+
+    @include media-query-lap {
+      font-size: 60px !important;
+    }
+  }
+
+  h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  iframe {
+    margin: 32px 0;
+  }
+
+  .MuiTypography-body1 {
+    font-weight: 300;
+  }
+}
+
+.addthis_inline_share_toolbox {
+  margin: 16px 0;
+}
+
+.disqus {
+  margin: 0 20px;
+}
+
+.addthis_inline_follow_toolbox_arjv {
+  margin-left: 12px;
+  p {
+    display: none;
+  }
+  a {
+    box-shadow: none;
+    span {
+      margin: 4px 1px !important;
+    }
+  }
+}
+
+

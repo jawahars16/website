@@ -1,0 +1,23 @@
+@import '../../css/variables';
+@import '../../css/media';
+
+.cover {
+  width: 25%;
+  object-fit: cover;
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: #fbfbfb !important;
+
+  img {
+    display: none;
+
+    @include media-query-lap {
+      display: block;
+      max-width: 150px;
+    }
+  }
+}

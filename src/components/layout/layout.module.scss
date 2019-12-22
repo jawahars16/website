@@ -1,0 +1,41 @@
+@import "../../css/variables";
+
+.navBar {
+  height: 47px;
+  background-color: $primaryColor;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  z-index: 10000;
+}
+
+.layout {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.postLayout {
+  max-width: 800px;
+  margin: 64px auto;
+
+  article {
+    font-size: 20px;
+    line-height: 1.6em;
+  }
+}
+
+.toolbar {
+  height: 47px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+
+  a {
+    color: #fff;
+    padding: 0 10px;
+    box-shadow: none;
+  }
+}

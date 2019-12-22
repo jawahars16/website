@@ -6,34 +6,9 @@ import Typography from "@material-ui/core/Typography"
 import { CardHeader } from "@material-ui/core"
 import { Link } from "gatsby"
 import Box from "@material-ui/core/Box"
-
-const useStyles = makeStyles(theme => ({
-  card: {
-    display: "flex",
-    marginBottom: 20,
-  },
-  details: {
-    display: "flex",
-    flexDirection: "column",
-  },
-  content: {
-    flex: "1 0 auto",
-  },
-  cover: {
-    width: "25%",
-    objectFit: "cover",
-    margin: 0,
-  },
-  controls: {
-    display: "flex",
-    alignItems: "center",
-    paddingLeft: theme.spacing(1),
-    paddingBottom: theme.spacing(1),
-  },
-}))
+import classes from "./blog-tile.module.scss"
 
 export default function BlogTile(props) {
-  const classes = useStyles()
   const { frontmatter, excerpt } = props.blog
   const { title, date, featuredImage } = frontmatter
   let featuredImageSrc = featuredImage || "https://www.jawahar.tech/images/placeholder.png"
@@ -53,14 +28,14 @@ export default function BlogTile(props) {
           />
           <div>
             <CardContent>
-              <Typography variant="h5" >
-                {title}
-              </Typography>
-              <Typography variant="subtitle2" >
+              <Typography variant="subtitle2">
                 {date}
               </Typography>
+              <Typography variant="h5">
+                {title}
+              </Typography>
               <Box margin={1}/>
-              <Typography variant="body1" >
+              <Typography variant="body1">
                 {`${excerpt.substring(0, 100)}...`}
               </Typography>
             </CardContent>
