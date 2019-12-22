@@ -31,7 +31,8 @@ class TalkHome extends React.Component {
           <BlogTile blog={node} key={node.fields.slug}/>
         ))}
 
-        <PaginationBar next={pageContext.next} prev={pageContext.prev}/>
+        {/*TODO: Fix this later*/}
+        {/*<PaginationBar next={pageContext.next} prev={pageContext.prev}/>*/}
       </Layout>
     )
   }

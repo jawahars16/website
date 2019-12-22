@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Img } from "gatsby"
 
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
@@ -8,10 +8,13 @@ import NavigationBar from "../components/navigation-bar"
 import Divider from "@material-ui/core/Divider"
 import BlogTile from "../components/blog-tile"
 import PaginationBar from "../components/pagination-bar"
+import { rhythm } from "../utils/typography"
+import Image from "gatsby-image"
 
 class AboutPage extends React.Component {
   render() {
     const { data } = this.props
+    console.log(data)
     const siteTitle = data.site.siteMetadata.title
 
     return (
@@ -25,7 +28,11 @@ class AboutPage extends React.Component {
 
         <Box style={{ margin: 40 }}/>
 
-        <img src='https://storage.googleapis.com/jawahar-tech/Profile.jpg' style={{ width: 120 }}/>
+        <Image
+          fixed={data.avatar.childImageSharp.fixed}
+          alt='Jawahar'
+        />
+        <Box style={{ margin: 40 }}/>
         <div className='about'>
           <Typography variant='body1'>
             Jawahar is a Software Programmer who is passionate about learning new languages and frameworks. He has years
@@ -45,6 +52,13 @@ export default AboutPage
 
 export const pageQuery = graphql`
     query {
+        avatar: file(absolutePath: { regex: "/Profile.jpg/" }) {
+            childImageSharp {
+                fixed(width: 160, height: 190) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
         site {
             siteMetadata {
                 title

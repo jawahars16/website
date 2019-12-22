@@ -1,10 +1,17 @@
 @import "../../css/media";
+@import "../../css/variables";
 
 .jumbotron {
-  background-color: #007ACB;
+  background-color: $primaryColor;
+  background-image: url("../../images/batthern.png");
   padding-top: 47px;
   padding-bottom: 47px;
   color: #fff;
+
+  img {
+    padding: 0 24px;
+    margin-bottom: 0;
+  }
 
   .title {
     font-size: 16vw;

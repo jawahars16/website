@@ -13,7 +13,7 @@ const linkStyle = {
 const activeLinkStyle = {
   marginRight: 24,
   fontSize: 18,
-  boxShadow: "0 2px 0 0 #007ACB",
+  boxShadow: `0 2px 0 0 #007ACB`,
   color: "#007ACB",
 }
 
