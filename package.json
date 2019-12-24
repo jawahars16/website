@@ -49,15 +49,16 @@
   "devDependencies": {
     "prettier": "^1.19.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/jawahars16/website#readme",
   "keywords": [
-    "gatsby"
+    "jawahar",
+    "website"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/jawahars16/website.git"
   },
   "scripts": {
     "build": "gatsby build",
