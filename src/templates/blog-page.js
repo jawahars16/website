@@ -1,26 +1,22 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Bio from "../components/bio"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
 import PostLayout from "../components/layout/post-layout"
-import Helmet from "react-helmet"
 import { Typography } from "@material-ui/core"
 import Divider from "@material-ui/core/Divider"
-import LazyLoad from "react-lazy-load"
-import ShareButtons from "../components/social-icons"
 import SocialShare from "../components/social-share"
+import CommentsSection from "../components/comment-section"
 
 class BlogPage extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
+    const { title, siteUrl } = this.props.data.site.siteMetadata
     const { previous, next } = this.props.pageContext
     const featuredImageSrc = post.frontmatter.featuredImage.childImageSharp.fluid.src
-    const featuredImage = <img src={featuredImageSrc}/>
+    const featuredImage = <img src={featuredImageSrc} alt={post.frontmatter.title}/>
 
     return (
-      <PostLayout location={this.props.location} title={siteTitle}>
+      <PostLayout location={this.props.location} title={title}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
@@ -28,18 +24,21 @@ class BlogPage extends React.Component {
         />
         <article>
           <header>
-            <Typography variant='h1' style={{ fontSize: 60 }} >
+            <Typography variant='h1' style={{ fontSize: 60 }}>
               {post.frontmatter.title}
             </Typography>
             <Typography variant='subtitle1' gutterBottom>
               {post.frontmatter.date}
             </Typography>
           </header>
-          <SocialShare title={post.frontmatter.title}/>
+          <SocialShare title={post.frontmatter.title} url={`${siteUrl}${this.props.pageContext.slug}`}/>
           {featuredImage}
           <section dangerouslySetInnerHTML={{ __html: post.html }}/>
           <Divider variant="middle" style={{ margin: 0 }}/>
-          <SocialShare title={post.frontmatter.title}/>
+          <SocialShare title={post.frontmatter.title} url={`${siteUrl}${this.props.pageContext.slug}`}/>
+          <CommentsSection title={post.frontmatter.title}
+                           id={this.props.pageContext.slug}
+                           url={`${siteUrl}${this.props.pageContext.slug}`}/>
         </article>
 
         <nav>
@@ -80,6 +79,7 @@ export const pageQuery = graphql`
         site {
             siteMetadata {
                 title
+                siteUrl
             }
         }
         markdownRemark(fields: { slug: { eq: $slug } }) {

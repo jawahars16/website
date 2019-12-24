@@ -1,28 +1,12 @@
 import React from "react"
-
-import { rhythm } from "../../utils/typography"
 import styles from "./layout.module.scss"
-import { Typography } from "@material-ui/core"
-import Toolbar from "@material-ui/core/Toolbar"
-import Button from "@material-ui/core/Button"
 import { graphql, Link, useStaticQuery } from "gatsby"
-import Helmet from "react-helmet"
-import { Disqus, CommentCount } from "gatsby-plugin-disqus"
-import LazyLoad from "react-lazy-load"
-import Divider from "@material-ui/core/Divider"
 import Footer from "../Footer"
-import $ from "jquery"
 import Image from "gatsby-image"
 
 
 const PostLayout = props => {
   const { children } = props
-  let disqusConfig = {
-    url: window.location.href,
-    identifier: window.location.pathname,
-    title: document.title,
-  }
-
   const data = useStaticQuery(graphql`
       query LogoQuery {
           logo: file(absolutePath: { regex: "/logo-inverted.png/" }) {
@@ -57,7 +41,6 @@ const PostLayout = props => {
       </div>
       <div className={styles.postLayout}>
         <main>{children}</main>
-        <Disqus className='disqus' config={disqusConfig}/>
         <Footer/>
       </div>
     </div>

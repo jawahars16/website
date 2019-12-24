@@ -85,6 +85,13 @@ const getArticles = async graphql => {
                     }
                   }
                 }
+                tileImage {
+                  childImageSharp {
+                    fluid {
+                      src
+                    }
+                  }
+                }
               }
             }
           }

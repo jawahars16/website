@@ -26,7 +26,9 @@ const createPaginatedPages = (posts, offset, pageIndex, createPage, slug, templa
     component,
     context: {
       posts: filteredPosts,
-      siteMeta: {},
+      siteMeta: {
+        siteUrl: url
+      },
       next,
       prev,
     },

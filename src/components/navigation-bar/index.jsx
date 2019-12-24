@@ -19,16 +19,18 @@ const activeLinkStyle = {
 
 const NavigationBar = props => {
 
-  const isBlogPage = window.location.pathname.includes("/blog") || window.location.pathname === "/"
+  const isBlogPage = props.url.includes("blog") || props.url === "/"
+  const isTalkPage = props.url.includes("talks")
+  const isAboutPage = props.url.includes("about")
 
   return <BottomNavigation className={styles.navigationBar}>
     <Link to='/' style={isBlogPage ? activeLinkStyle : linkStyle}>
       Blog
     </Link>
-    <Link to='/talks' style={linkStyle} activeStyle={activeLinkStyle}>
+    <Link to='/talks' style={isTalkPage ? activeLinkStyle : linkStyle}>
       Talks
     </Link>
-    <Link to='/about' style={linkStyle} activeStyle={activeLinkStyle}>
+    <Link to='/about' style={isAboutPage ? activeLinkStyle : linkStyle}>
       About
     </Link>
   </BottomNavigation>

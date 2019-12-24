@@ -2,7 +2,7 @@
 @import '../../css/media';
 
 .cover {
-  width: 25%;
+  width: 150px;
   object-fit: cover;
   margin: 0;
 }
@@ -14,10 +14,13 @@
 
   img {
     display: none;
+    width: 8em;
+    height: 8.5em;
+    object-fit: cover;
+    margin: 0;
 
     @include media-query-lap {
       display: block;
-      max-width: 150px;
     }
   }
 }

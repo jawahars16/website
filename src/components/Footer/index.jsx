@@ -11,7 +11,7 @@ const Footer = (props) => {
         <Divider variant="middle"/>
         <div className={styles.footerBar}>
           <SocialIcons />
-          <Typography variant='caption'>Copyright © jawahar.tech</Typography>
+          <Typography variant='caption'>© jawahar.tech.</Typography>
         </div>
       </footer>
     </div>

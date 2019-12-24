@@ -1,26 +1,22 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
-import Bio from "../components/bio"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
 import "./hljs.css"
 import PostLayout from "../components/layout/post-layout"
 import Divider from "@material-ui/core/Divider"
 import { Typography } from "@material-ui/core"
-import LazyLoad from "react-lazy-load"
-import Helmet from "react-helmet"
 import SocialShare from "../components/social-share"
+import CommentsSection from "../components/comment-section"
 
 class LegacyBlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.legacyContent
-    const siteTitle = this.props.data.site.siteMetadata.title
+    const {title, siteUrl} = this.props.data.site.siteMetadata
     const { previous, next } = this.props.pageContext
     const featuredImageSrc = post.frontmatter.featuredImage !== "https://storage.googleapis.com/jawahar-tech/Profile.jpg" && post.frontmatter.featuredImage
 
     return (
-      <PostLayout location={this.props.location} title={siteTitle}>
+      <PostLayout location={this.props.location} title={title}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
@@ -35,11 +31,15 @@ class LegacyBlogPostTemplate extends React.Component {
               {post.frontmatter.date}
             </Typography>
           </header>
-          <SocialShare title={post.frontmatter.title}/>
-          {featuredImageSrc && <img src={featuredImageSrc}/>}
+          <SocialShare title={post.frontmatter.title} url={`${siteUrl}${this.props.pageContext.slug}`}/>
+          {featuredImageSrc && <img src={featuredImageSrc} alt={post.frontmatter.title}/>}
           <section dangerouslySetInnerHTML={{ __html: post.html }}/>
           <Divider variant="middle" style={{ margin: 0 }}/>
-          <SocialShare title={post.frontmatter.title}/>
+          <SocialShare title={post.frontmatter.title} url={`${siteUrl}${this.props.pageContext.slug}`}/>
+
+          <CommentsSection title={post.frontmatter.title}
+                           id={this.props.pageContext.slug}
+                           url={`${siteUrl}${this.props.pageContext.slug}`}/>
         </article>
 
         <nav>

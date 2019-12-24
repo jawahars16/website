@@ -5,17 +5,24 @@ module.exports = {
     description: `Jawahar is a Software Programmer who is passionate about learning new languages and frameworks. He has years of experience in building enterprise grade applications using various technologies. He is specifically interested in practicing functional programming with modern language features. He usually shares his learning through blog and talks.`,
     siteUrl: `https://www.jawahar.tech`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `jawahars_16`,
     },
   },
   plugins: [
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-129105691-1`,
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
       },
     },
     "gatsby-plugin-sass",
+    `gatsby-plugin-material-ui`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -78,11 +85,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Jawahar - Full Stack Developer`,
+        short_name: `Jawahar`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#007ACB`,
         display: `minimal-ui`,
         icon: `content/assets/logo.png`,
       },

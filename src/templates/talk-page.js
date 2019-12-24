@@ -1,23 +1,22 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Bio from "../components/bio"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
 import PostLayout from "../components/layout/post-layout"
 import { Box, Typography } from "@material-ui/core"
 import Button from "@material-ui/core/Button"
 import SocialShare from "../components/social-share"
 import Divider from "@material-ui/core/Divider"
 import Video from "../components/video"
+import CommentsSection from "../components/comment-section"
 
 class TalkPage extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
+    const {title, siteUrl} = this.props.data.site.siteMetadata
     const { previous, next } = this.props.pageContext
 
     return (
-      <PostLayout location={this.props.location} title={siteTitle}>
+      <PostLayout location={this.props.location} title={title}>
         <SEO
           title={post.frontmatter.title}
           description={post.excerpt}
@@ -32,13 +31,17 @@ class TalkPage extends React.Component {
               {post.frontmatter.date}
             </Typography>
           </header>
-          <SocialShare title={post.frontmatter.title}/>
+          <SocialShare title={post.frontmatter.title} url={`${siteUrl}${this.props.pageContext.slug}`}/>
           <Video videoLink={post.frontmatter.videoLink}/>
           <section dangerouslySetInnerHTML={{ __html: post.html }}/>
           <Button variant='contained' color='secondary' href={post.frontmatter.slidesLink} target='_blank'>View Slides</Button>
           <Box style={{margin: 32}}/>
           <Divider variant="middle" style={{ margin: 0 }}/>
-          <SocialShare title={post.frontmatter.title}/>
+          <SocialShare title={post.frontmatter.title} url={`${siteUrl}${this.props.pageContext.slug}`}/>
+
+          <CommentsSection title={post.frontmatter.title}
+                           id={this.props.pageContext.slug}
+                           url={`${siteUrl}${this.props.pageContext.slug}`}/>
         </article>
 
         <nav>
@@ -79,6 +82,7 @@ export const pageQuery = graphql`
         site {
             siteMetadata {
                 title
+                siteUrl
             }
         }
         markdownRemark(fields: { slug: { eq: $slug } }) {

@@ -1,20 +1,16 @@
 import React from "react"
-import { graphql, Img } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 import { Box, Typography } from "@material-ui/core"
 import NavigationBar from "../components/navigation-bar"
 import Divider from "@material-ui/core/Divider"
-import BlogTile from "../components/blog-tile"
-import PaginationBar from "../components/pagination-bar"
-import { rhythm } from "../utils/typography"
 import Image from "gatsby-image"
 
 class AboutPage extends React.Component {
   render() {
     const { data } = this.props
-    console.log(data)
     const siteTitle = data.site.siteMetadata.title
 
     return (
@@ -22,7 +18,7 @@ class AboutPage extends React.Component {
         <SEO title='About'
              featureImage='https://storage.googleapis.com/jawahar-tech/Profile.jpg'/>
         <Box style={{ margin: 24 }}/>
-        <NavigationBar/>
+        <NavigationBar url='/about'/>
 
         <Divider variant="middle" style={{ margin: 0 }}/>
 

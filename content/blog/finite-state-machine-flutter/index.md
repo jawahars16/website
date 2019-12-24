@@ -3,6 +3,7 @@ title: Finite state machine in Flutter
 date: "2019-08-26T22:12:03.284Z"
 description: "Have you ever worked with a system, where it often end up in an unexpected state?"
 featuredImage: "./traffic_light.jpg"
+tileImage: "./tile_image.jpg"
 ---
 
 Have you ever worked with a system, where it often end up in an unexpected state? For example, how about displaying both play and pause button at the same time in a media player. What about both red and green lights glowing at the sme time or an orange light turns to green in a traffic light system. These unexpected states are usually the result of poor handling of state transitions. A system must have a predefined set of states. The state of a system gets transferred to another state based on a certain external action. These transition between those states and actions those causing them should be clearly defined.
