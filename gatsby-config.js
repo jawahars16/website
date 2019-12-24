@@ -21,6 +21,7 @@ module.exports = {
         // Add any options here
       },
     },
+    `gatsby-plugin-sitemap`,
     "gatsby-plugin-sass",
     `gatsby-plugin-material-ui`,
     {
