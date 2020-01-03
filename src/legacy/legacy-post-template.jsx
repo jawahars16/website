@@ -80,6 +80,7 @@ export const pageQuery = graphql`
         site {
             siteMetadata {
                 title
+                siteUrl
             }
         }
         legacyContent(fields:{slug: { eq: $slug } }) {
