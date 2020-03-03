@@ -8,11 +8,12 @@ import SocialShare from "../components/social-share"
 import Divider from "@material-ui/core/Divider"
 import Video from "../components/video"
 import CommentsSection from "../components/comment-section"
+import { NavigateBefore } from "@material-ui/icons"
 
 class TalkPage extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    const {title, siteUrl} = this.props.data.site.siteMetadata
+    const { title, siteUrl } = this.props.data.site.siteMetadata
     const { previous, next } = this.props.pageContext
 
     return (
@@ -22,20 +23,30 @@ class TalkPage extends React.Component {
           description={post.excerpt}
           featureImage={post.frontmatter.featuredImage.childImageSharp.fluid.src}
         />
-        <article>
+        <Box boxShadow={5} className='content'>
+        <article >
+          <Link to='/talks' className='back-to-home-link'>
+            <Box display='flex' flexDirection='row' alignItems='center'>
+              <NavigateBefore/>
+              <span>
+                Back to Home
+                </span>
+            </Box>
+          </Link>
           <header>
-            <Typography variant='h1' style={{ fontSize: 60 }} >
+            <Typography variant='h1' style={{ fontSize: 60 }}>
               {post.frontmatter.title}
             </Typography>
             <Typography variant='subtitle1' gutterBottom>
-              {post.frontmatter.date}
+              {post.frontmatter.date} • {post.frontmatter.viewTime}
             </Typography>
           </header>
           <SocialShare title={post.frontmatter.title} url={`${siteUrl}${this.props.pageContext.slug}`}/>
           <Video videoLink={post.frontmatter.videoLink}/>
           <section dangerouslySetInnerHTML={{ __html: post.html }}/>
-          <Button variant='contained' color='secondary' href={post.frontmatter.slidesLink} target='_blank'>View Slides</Button>
-          <Box style={{margin: 32}}/>
+          <Button variant='contained' color='secondary' href={post.frontmatter.slidesLink} target='_blank'>View
+            Slides</Button>
+          <Box style={{ margin: 32 }}/>
           <Divider variant="middle" style={{ margin: 0 }}/>
           <SocialShare title={post.frontmatter.title} url={`${siteUrl}${this.props.pageContext.slug}`}/>
 
@@ -43,6 +54,7 @@ class TalkPage extends React.Component {
                            id={this.props.pageContext.slug}
                            url={`${siteUrl}${this.props.pageContext.slug}`}/>
         </article>
+        </Box>
 
         <nav>
           <ul
@@ -92,6 +104,7 @@ export const pageQuery = graphql`
             frontmatter {
                 title
                 videoLink
+                viewTime
                 slidesLink
                 date(formatString: "MMMM DD, YYYY")
                 featuredImage {

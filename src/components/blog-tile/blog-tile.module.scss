@@ -10,7 +10,12 @@
 .card {
   display: flex;
   margin-bottom: 20px;
-  background-color: #fbfbfb !important;
+  //background-color: #fbfbfb !important;
+
+  h5 {
+    font-weight: 500;
+    color: $primaryColor;
+  }
 
   img {
     display: none;

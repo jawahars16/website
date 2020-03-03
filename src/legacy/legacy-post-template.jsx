@@ -7,11 +7,13 @@ import Divider from "@material-ui/core/Divider"
 import { Typography } from "@material-ui/core"
 import SocialShare from "../components/social-share"
 import CommentsSection from "../components/comment-section"
+import Box from "@material-ui/core/Box"
+import { NavigateBefore } from "@material-ui/icons"
 
 class LegacyBlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.legacyContent
-    const {title, siteUrl} = this.props.data.site.siteMetadata
+    const { title, siteUrl } = this.props.data.site.siteMetadata
     const { previous, next } = this.props.pageContext
     const featuredImageSrc = post.frontmatter.featuredImage !== "https://storage.googleapis.com/jawahar-tech/Profile.jpg" && post.frontmatter.featuredImage
 
@@ -22,25 +24,35 @@ class LegacyBlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
           featureImage={featuredImageSrc}
         />
-        <article>
-          <header>
-            <Typography variant='h1' style={{ fontSize: 60 }}>
-              {post.frontmatter.title}
-            </Typography>
-            <Typography variant='subtitle1' gutterBottom>
-              {post.frontmatter.date}
-            </Typography>
-          </header>
-          <SocialShare title={post.frontmatter.title} url={`${siteUrl}${this.props.pageContext.slug}`}/>
-          {featuredImageSrc && <img src={featuredImageSrc} alt={post.frontmatter.title}/>}
-          <section dangerouslySetInnerHTML={{ __html: post.html }}/>
-          <Divider variant="middle" style={{ margin: 0 }}/>
-          <SocialShare title={post.frontmatter.title} url={`${siteUrl}${this.props.pageContext.slug}`}/>
+        <Box boxShadow={5} className='content'>
+          <article>
+            <Link to='/' className='back-to-home-link'>
+              <Box display='flex' flexDirection='row' alignItems='center'>
+                <NavigateBefore/>
+                <span>
+                Back to Home
+                </span>
+              </Box>
+            </Link>
+            <header>
+              <Typography variant='h1' style={{ fontSize: 60 }}>
+                {post.frontmatter.title}
+              </Typography>
+              <Typography variant='subtitle1' gutterBottom>
+                {post.frontmatter.date} • {post.readingTime.text}
+              </Typography>
+            </header>
+            <SocialShare title={post.frontmatter.title} url={`${siteUrl}${this.props.pageContext.slug}`}/>
+            {featuredImageSrc && <img src={featuredImageSrc} alt={post.frontmatter.title}/>}
+            <section dangerouslySetInnerHTML={{ __html: post.html }}/>
+            <Divider variant="middle" style={{ margin: 0 }}/>
+            <SocialShare title={post.frontmatter.title} url={`${siteUrl}${this.props.pageContext.slug}`}/>
 
-          <CommentsSection title={post.frontmatter.title}
-                           id={this.props.pageContext.slug}
-                           url={`${siteUrl}${this.props.pageContext.slug}`}/>
-        </article>
+            <CommentsSection title={post.frontmatter.title}
+                             id={this.props.pageContext.slug}
+                             url={`${siteUrl}${this.props.pageContext.slug}`}/>
+          </article>
+        </Box>
 
         <nav>
           <ul
@@ -87,6 +99,9 @@ export const pageQuery = graphql`
             id
             excerpt
             html
+            readingTime {
+                text
+            }
             frontmatter {
                 title
                 date(formatString: "MMMM DD, YYYY")

@@ -3,6 +3,7 @@ title: The power of Streams in NodeJS
 date: "2020-01-02T22:12:00.000Z"
 videoLink: "https://www.youtube.com/embed/0BvJhJlueoc"
 featuredImage: "./cover.jpg"
+viewTime: "37 minutes"
 slidesLink: "https://www.slideshare.net/JawaharSureshBabu/the-power-of-streams-in-node-js"
 ---
 

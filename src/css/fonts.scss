@@ -1,0 +1,10 @@
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-display: fallback;
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto'), local('Roboto'), url(Roboto-Regulat.ttf) format('ttf'),
+  url(https://static.thoughtworks.com/fonts/OpenSansLight-normal-300.woff) format('woff');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}

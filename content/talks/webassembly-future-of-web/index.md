@@ -1,8 +1,9 @@
 ---
-title: Web Assembly - Future of Web development and JavaScript
+title: Web Assembly - Future of Web development and JS
 date: "2019-10-03T22:12:03.284Z"
 videoLink: "https://youtube.com/embed/osD7mLgTovw"
 featuredImage: "./cover.png"
+viewTime: "55 minutes"
 slidesLink: "https://www.slideshare.net/JawaharSureshBabu/webassembly-208984162"
 ---
 

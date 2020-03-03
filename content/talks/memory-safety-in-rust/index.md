@@ -3,6 +3,7 @@ title: Memory safety in Rust
 date: "2019-07-25T22:12:03.284Z"
 videoLink: "https://youtube.com/embed/qwJWF7XeRxs"
 featuredImage: "./cover.jpeg"
+viewTime: "28 minutes"
 slidesLink: "https://www.slideshare.net/JawaharSureshBabu/memory-safety-in-rust"
 ---
 

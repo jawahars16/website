@@ -34,27 +34,38 @@ export default function BlogTile(props) {
       />
   }
 
+  let readTime
+  if (props.blog.readingTime) {
+    readTime = props.blog.readingTime.text
+  } else if (props.blog.fields.readingTime) {
+    readTime = props.blog.fields.readingTime.text
+  } else {
+    readTime = frontmatter.viewTime
+  }
+
   return (
-    <article>
-      <Link to={props.blog.fields.slug}>
-        <Card className={classes.card}>
-          {featuredImg}
-          <div>
-            <CardContent>
-              <Typography variant="subtitle2">
-                {date}
-              </Typography>
-              <Typography variant="h5">
-                {title}
-              </Typography>
-              <Box margin={1}/>
-              <Typography variant="body1">
-                {`${excerpt.substring(0, 100)}...`}
-              </Typography>
-            </CardContent>
-          </div>
-        </Card>
-      </Link>
-    </article>
+    <Box className='card-content' boxShadow={2}>
+      <article>
+        <Link to={props.blog.fields.slug}>
+          <Card className={classes.card}>
+            {featuredImg}
+            <div>
+              <CardContent>
+                <Typography variant="subtitle2" className='date-read-time'>
+                  {date} • {readTime}
+                </Typography>
+                <Typography variant="h5">
+                  {title}
+                </Typography>
+                <Box margin={1}/>
+                <Typography variant="body1">
+                  {`${excerpt.substring(0, 100)}...`}
+                </Typography>
+              </CardContent>
+            </div>
+          </Card>
+        </Link>
+      </article>
+    </Box>
   )
 }

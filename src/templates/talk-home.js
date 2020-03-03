@@ -19,7 +19,6 @@ class TalkHome extends React.Component {
         <Box style={{ margin: 24 }}/>
 
         <NavigationBar url={url}/>
-        <Divider variant="middle" style={{ margin: 0 }}/>
 
         <Box style={{ margin: 40 }}/>
 

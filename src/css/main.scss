@@ -1,26 +1,77 @@
 @import 'variables';
 @import "media";
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
 
 html, body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  background-image: url("../images/paper-pattern.jpg");
 
   main {
     margin: 0 20px;
 
-    .about p {
-      font-size: 20px;
-      font-weight: 300;
-      line-height: 1.6em;
-      text-align: justify;
+    .profile-picture {
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 200px;
+      margin: auto;
+      border: 3px solid #fff;
+    }
+
+    .about {
+      p {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.6em;
+        text-align: justify;
+      }
     }
   }
 }
 
-article {
-  font-family: "Roboto", sans-serif;
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.card-content {
+  a div {
+    .date-read-time {
+      color: $textColor;
+      font-size: 12px;
+      font-style: normal;
+    }
+    img {
+      height: 150px !important;
+      width: 9em !important;
+    }
+  }
+}
+
+.content {
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 18px;
+  background-color: white;
+  margin: -20px;
+  padding: 22px;
+
+  @include media-query-lap {
+    margin-top: -20px;
+  }
+
+
+  .back-to-home-link {
+    font-size: 18px;
+    text-decoration: none;
+    box-shadow: none;
+
+    div {
+      margin-bottom: 8px;
+      margin-left: -5px;
+    }
+  }
 
   p {
     text-align: justify;
@@ -45,8 +96,11 @@ article {
     }
   }
 
+  h2 {
+    font-size: 24px;
+  }
+
   h3 {
-    font-family: "Roboto", sans-serif;
     font-weight: 600;
     font-size: 20px;
   }
@@ -70,11 +124,14 @@ article {
 
 .addthis_inline_follow_toolbox_arjv {
   margin-left: 12px;
+
   p {
     display: none;
   }
+
   a {
     box-shadow: none;
+
     span {
       margin: 4px 1px !important;
     }

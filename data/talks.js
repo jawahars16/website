@@ -45,6 +45,7 @@ const getTalks = async graphql => {
                 date(formatString: "MMMM DD, YYYY")
                 description
                 videoLink
+                viewTime
                 slidesLink
                 featuredImage {
                   childImageSharp {

@@ -1,3 +1,5 @@
+const readTimeEstimate = require('../node_modules/read-time-estimate/dist/read-time-estimate');
+
 const createLegacyBlogNodes = async (node, loadNodeContent, createNode) => {
 
   console.log('Creating legacy nodes')
@@ -6,7 +8,9 @@ const createLegacyBlogNodes = async (node, loadNodeContent, createNode) => {
   const { meta, content } = JSON.parse(nodeContent)
 
   console.log("==== Building Legacy Node ====")
-  console.log(meta.title)
+  const {
+    humanizedDuration
+  } = readTimeEstimate(nodeContent, 275, 12, 500, ['img', 'Image'])
 
   // set up the new node.
   const htmlNodeContent = {
@@ -14,6 +18,9 @@ const createLegacyBlogNodes = async (node, loadNodeContent, createNode) => {
     internal: {
       contentDigest: node.internal.contentDigest,
       type: "LegacyContent",
+    },
+    readingTime: {
+      text: `${humanizedDuration} read`
     },
     relativePath: node.relativePath,
     excerpt: meta.excerpt,

@@ -53,6 +53,9 @@ const getArticles = async graphql => {
               fields {
                 slug
               }
+              readingTime {
+                text
+              }
               excerpt
               frontmatter {
                 title
@@ -71,6 +74,9 @@ const getArticles = async graphql => {
             node {
               fields {
                 slug
+                readingTime {
+                  text
+                }
               }
               excerpt
               fileAbsolutePath

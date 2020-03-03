@@ -10,13 +10,13 @@ import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 const PaginationBar = props => {
   const { prev, next } = props
 
-  const prevLink = prev ? <Button><NavigateBeforeIcon /><Link to={prev}>Latest articles</Link></Button> : <Box/>
-  const nextLink = next ? <Button><Link to={next}>Old articles</Link><NavigateNextIcon /></Button> : <Box/>
+  const prevLink = prev ? <div className={styles.toolbar}><NavigateBeforeIcon /><Link to={prev}>Latest articles</Link></div> : <div></div>
+  const nextLink = next ? <div className={styles.toolbar}><Link to={next}>Old articles</Link><NavigateNextIcon /></div> : <div></div>
 
-  return <BottomNavigation className={styles.paginationBar}>
+  return <div className={styles.paginationBar}>
     {prevLink}
     {nextLink}
-  </BottomNavigation>
+  </div>
 }
 
 export default PaginationBar

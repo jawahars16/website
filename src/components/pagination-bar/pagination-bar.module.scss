@@ -3,6 +3,7 @@
 .pagination-bar {
   background-color: transparent !important;
   justify-content: space-between !important;
+  display: flex;
 
   a {
     box-shadow: none;
@@ -10,5 +11,10 @@
 
   svg {
     color: $primaryColor
+  }
+
+  .toolbar {
+    display: flex;
+    align-items: center;
   }
 }
