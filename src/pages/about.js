@@ -8,6 +8,7 @@ import NavigationBar from "../components/navigation-bar"
 import Divider from "@material-ui/core/Divider"
 import Image from "gatsby-image"
 import Connect from "../components/connect"
+import Upcoming from "../components/upcoming"
 
 class AboutPage extends React.Component {
   render() {
@@ -31,6 +32,7 @@ class AboutPage extends React.Component {
         </Box>
         <Connect/>
         <Box style={{ margin: 20 }}/>
+        <Upcoming />
         <div className='about'>
           <Typography variant='body1' gutterBottom>
             Jawahar is a Software Programmer who is passionate about learning new languages and frameworks. He has years

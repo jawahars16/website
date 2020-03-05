@@ -15,6 +15,23 @@ module.exports = {
         trackingId: process.env.GOOGLE_ANALYTICS_ID,
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-cookiehub-banner`,
+    //   options: {
+    //     cookieHubId: "4bc895cd",
+    //     categories: [
+    //       {
+    //         categoryName: 'required',
+    //       },
+    //       {
+    //         categoryName: 'analytics',
+    //       },
+    //       {
+    //         categoryName: 'marketing',
+    //       }
+    //     ]
+    //   }
+    // },
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
@@ -43,6 +60,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/talks/`,
         name: `talks`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/`,
+        name: `content`,
       },
     },
     {
@@ -83,6 +107,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-yaml`,
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,

@@ -6,6 +6,7 @@ import { Box } from "@material-ui/core"
 import Divider from "@material-ui/core/Divider"
 import PaginationBar from "../components/pagination-bar"
 import NavigationBar from "../components/navigation-bar"
+import Upcoming from "../components/upcoming"
 
 class BlogHome extends React.Component {
   render() {
@@ -20,6 +21,7 @@ class BlogHome extends React.Component {
         <NavigationBar url={url}/>
 
         <Box style={{ margin: 40 }}/>
+        <Upcoming />
 
         {posts.map(({ node }) => (
           <BlogTile blog={node} key={node.fields.slug}/>

@@ -1,0 +1,11 @@
+talks:
+  - title: 'Rise of JAMStack'
+    date: '2020-04-03 09:25:00'
+    image: 'https://images.hasgeek.com/embed/file/512c6775634243398ac41d2bd3c97022'
+    link: 'https://hasgeek.com/jsfoo/2020-chennai/schedule/rise-of-jamstack-building-fast-and-secure-websites-eSMMGMTSNZoLDadooGbtfZ'
+    id: 'jamstack'
+    location: 'Chennai'
+    color: '#002442'
+    textColor: '#fff'
+    active: true
+    description: 'In this talk, we discuss the new approach for building modern web applications - JAMStack - an architectural style for deploying fast, highly scalable and secured websites.'
