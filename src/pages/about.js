@@ -18,7 +18,7 @@ class AboutPage extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title='About'
-             featureImage={data.avatar.childImageSharp.fixed.src}/>
+             featureImage={`https://jawahar.tech${data.avatar.childImageSharp.fixed.src}`}/>
         <Box style={{ margin: 24 }}/>
         <NavigationBar url='/about'/>
 
@@ -32,7 +32,7 @@ class AboutPage extends React.Component {
         </Box>
         <Connect/>
         <Box style={{ margin: 20 }}/>
-        <Upcoming />
+        <Upcoming/>
         <div className='about'>
           <Typography variant='body1' gutterBottom>
             Jawahar is a Software Programmer who is passionate about learning new languages and frameworks. He has years

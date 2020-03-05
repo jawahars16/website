@@ -21,7 +21,7 @@ class TalkPage extends React.Component {
         <SEO
           title={post.frontmatter.title}
           description={post.excerpt}
-          featureImage={post.frontmatter.featuredImage.childImageSharp.fluid.src}
+          featureImage={`https://jawahar.tech${post.frontmatter.featuredImage.childImageSharp.fluid.src}`}
         />
         <Box boxShadow={5} className='content'>
         <article >

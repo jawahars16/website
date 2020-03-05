@@ -16,7 +16,7 @@ class TalkHome extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <SEO title='Talks' featureImage='https://storage.googleapis.com/jawahar-tech/Profile.jpg'/>
+        <SEO title='Talks' featureImage='https://jawahar.tech/static/c473e3eabcfadd5beb55414e2611ccd4/ca45b/cover.jpg'/>
         <Box style={{ margin: 24 }}/>
 
         <NavigationBar url={url}/>

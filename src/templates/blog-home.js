@@ -16,12 +16,13 @@ class BlogHome extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <SEO title='Blog' featureImage='https://storage.googleapis.com/jawahar-tech/Profile.jpg'/>
+        <SEO title='Blog'
+             featureImage='https://jawahar.tech/static/9ffa033d65c932ec90c8c49eeee9c15e/6bf53/Profile.jpg'/>
         <Box style={{ margin: 24 }}/>
         <NavigationBar url={url}/>
 
         <Box style={{ margin: 40 }}/>
-        <Upcoming />
+        <Upcoming/>
 
         {posts.map(({ node }) => (
           <BlogTile blog={node} key={node.fields.slug}/>
