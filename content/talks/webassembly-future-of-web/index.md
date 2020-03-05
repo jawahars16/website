@@ -1,5 +1,5 @@
 ---
-title: Web Assembly - Future of Web development and JS
+title: Web Assembly - Future of Web development
 date: "2019-10-03T22:12:03.284Z"
 videoLink: "https://youtube.com/embed/osD7mLgTovw"
 featuredImage: "./cover.png"
