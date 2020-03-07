@@ -36,12 +36,24 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .card-content {
+  &:hover {
+    transform: translateY(-0.2rem);
+    -webkit-transform: translateY(-0.2rem);
+    -ms-transform: translateY(-0.2rem);
+    box-shadow: 0px 3px 8px rgba(46,41,51,0.08), 0px 3px 10px rgba(71,63,79,0.16);
+  }
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4,0,0.2,1),box-shadow 250ms cubic-bezier(0.4,0,0.2,1),padding 250ms cubic-bezier(0.4,0,0.2,1);
+  -webkit-transition: transform 250ms cubic-bezier(0.4,0,0.2,1),box-shadow 250ms cubic-bezier(0.4,0,0.2,1),padding 250ms cubic-bezier(0.4,0,0.2,1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), padding 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
   a div {
     .date-read-time {
       color: $textColor;
       font-size: 12px;
       font-style: normal;
     }
+
     img {
       height: 150px;
       width: 9em;

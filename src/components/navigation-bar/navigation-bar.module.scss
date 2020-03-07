@@ -1,5 +1,28 @@
+@import "../../css/variables";
+
 .navigation-bar {
   background-color: transparent !important;
   justify-content: left !important;
   margin-bottom: -18px;
+}
+
+.link {
+  box-shadow: none;
+  font-size: 18px;
+  color: #4A5258;
+  width: 70px;
+  text-align: center;
+
+  &:hover {
+    font-weight: 500;
+  }
+}
+
+.active-link {
+  box-shadow: none;
+  width: 70px;
+  font-size: 18px;
+  color: $primaryColor;
+  font-weight: 500;
+  text-align: center;
 }

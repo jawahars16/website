@@ -15,8 +15,8 @@ const activeLinkStyle = {
   marginRight: 24,
   fontSize: 18,
   color: "#007ACB",
-  boxShadow: 'none',
-  fontWeight: 500
+  boxShadow: "none",
+  fontWeight: 500,
 }
 
 const NavigationBar = props => {
@@ -26,13 +26,13 @@ const NavigationBar = props => {
   const isAboutPage = props.url.includes("about")
 
   return <Box flexDirection='row' display='flex' justifyContent="center" marginBottom={-2}>
-    <Link to='/' style={isBlogPage ? activeLinkStyle : linkStyle}>
+    <Link to='/' className={isBlogPage ? styles.activeLink : styles.link}>
       Blog
     </Link>
-    <Link to='/talks' style={isTalkPage ? activeLinkStyle : linkStyle}>
+    <Link to='/talks' className={isTalkPage ? styles.activeLink : styles.link}>
       Talks
     </Link>
-    <Link to='/about' style={isAboutPage ? activeLinkStyle : linkStyle}>
+    <Link to='/about' className={isAboutPage ? styles.activeLink : styles.link}>
       About
     </Link>
   </Box>
