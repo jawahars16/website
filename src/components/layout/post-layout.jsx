@@ -3,6 +3,7 @@ import styles from "./layout.module.scss"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import Footer from "../Footer"
 import Image from "gatsby-image"
+import { Box } from "@material-ui/core"
 
 
 const PostLayout = props => {
@@ -20,8 +21,8 @@ const PostLayout = props => {
   `)
 
   return (
-    <div>
-      <div className={styles.navBar}>
+    <div >
+      <Box className={styles.navBar} boxShadow={2}>
         <div className={styles.toolbar}>
           <div>
             <a href='/'>
@@ -38,7 +39,7 @@ const PostLayout = props => {
             <Link to='/about'>About</Link>
           </div>
         </div>
-      </div>
+      </Box>
       <div className={styles.postLayout}>
         <main>{children}</main>
         <Footer/>

@@ -21,7 +21,7 @@ const Jumpotron = (props) => {
   `)
 
   return (
-    <Box className={styles.jumbotron} textAlign='center'>
+    <Box className={styles.jumbotron} textAlign='center' boxShadow={3}>
       <div className={styles.imageContainer}>
         <a href='/'>
           {/*<Img fluid={data.avatar.childImageSharp.fluid} alt='Jawahar'/>*/}
