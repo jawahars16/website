@@ -40,6 +40,13 @@ module.exports = {
     },
     `gatsby-plugin-sitemap`,
     "gatsby-plugin-sass",
+    {
+      resolve: `gatsby-plugin-hotjar`,
+      options: {
+        id: 1723819,
+        sv: 6
+      },
+    },
     `gatsby-plugin-material-ui`,
     {
       resolve: `gatsby-source-filesystem`,
