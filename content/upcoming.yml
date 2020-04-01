@@ -7,5 +7,5 @@ talks:
     location: 'Chennai'
     color: '#002442'
     textColor: '#fff'
-    active: true
+    active: false
     description: 'In this talk, we discuss the new approach for building modern web applications - JAMStack - an architectural style for deploying fast, highly scalable and secured websites.'
