@@ -22,7 +22,7 @@ class BlogPage extends React.Component {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
-          featureImage={featuredImageSrc}
+          featureImage={featuredImageSrc.includes('http') ? featuredImageSrc : `https://www.jawahar.tech${featuredImageSrc}`}
         />
         <Box boxShadow={5} className='content'>
           <article>
