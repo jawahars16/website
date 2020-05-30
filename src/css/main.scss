@@ -85,8 +85,41 @@ h1, h2, h3, h4, h5, h6, p, a {
     }
   }
 
+  blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 0;
+    padding: 0.5em 10px;
+  }
+
+  blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 3em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+  blockquote p {
+    display: inline;
+  }
+
   p {
-    text-align: justify;
+    //text-align: justify;
+
+    @include media-query-lap {
+      text-align: justify;
+    }
+    line-height: 1.8;
+
+    code:not(.hljs) {
+      font-size: 18px;
+      line-height: 1.75rem;
+      font-style: italic;
+      color: brown;
+      background: rgba(0, 0, 0, 0.05);
+      padding: 2px;
+    }
   }
 
   section img {

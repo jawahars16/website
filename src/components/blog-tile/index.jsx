@@ -16,15 +16,17 @@ export default function BlogTile(props) {
 
   if (!featuredImage || featuredImage === "https://s0.wp.com/i/blank.jpg") {
     featuredImg = <Box/>
-  } else if (featuredImageSrc.childImageSharp) {
+  }
+  else if (featuredImageSrc.childImageSharp) {
     featuredImg =
       <img
         className={classes.cover}
-        src={featuredImage.childImageSharp.fluid.src}
+        src={featuredImageSrc.childImageSharp.fluid.src}
         alt={title}
         loading='lazy'
       />
-  } else {
+  }
+  else {
     featuredImg =
       <img
         className={classes.cover}

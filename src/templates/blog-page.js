@@ -14,7 +14,7 @@ class BlogPage extends React.Component {
     const post = this.props.data.markdownRemark
     const { title, siteUrl } = this.props.data.site.siteMetadata
     const { previous, next } = this.props.pageContext
-    const featuredImageSrc = "https://jawahar.tech" + post.frontmatter.featuredImage.childImageSharp.fluid.src
+    const featuredImageSrc = post.frontmatter.featuredImage.childImageSharp.fluid.src
     const featuredImage = <img src={featuredImageSrc} alt={post.frontmatter.title}/>
 
     return (
