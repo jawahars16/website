@@ -10,7 +10,7 @@ tileImage: "./deno.png"
 
 Even though NodeJS has a lot of advantages, it is known that none of the platforms is problem-free. NodeJS also has few downsides. A couple of years back, [Ryan Dahl](https://github.com/ry) (creator of NodeJS) gave a talk where he listed a few of the mistakes he regrets made in NodeJS. 
 
-[![10 Things I Regret About Node.js - Ryan Dahl - JSConf EU](http://img.youtube.com/vi/M3BM9TB-8yA/0.jpg)](http://www.youtube.com/watch?v=M3BM9TB-8yA "10 Things I Regret About Node.js - Ryan Dahl - JSConf EU")
+[![10 Things I Regret About Node.js - Ryan Dahl - JSConf EU](./video_thumbnail.jpg)](http://www.youtube.com/watch?v=M3BM9TB-8yA "10 Things I Regret About Node.js - Ryan Dahl - JSConf EU")
 
 But the actual question is, how critical those problems are and do those problems have to be addressed by a brand new runtime. Let's focus on a few core features that Deno claims to be the primary deal breakers. (*This article is going to be highly opinionated, so please feel free to share your comments and feedback.*)
 
