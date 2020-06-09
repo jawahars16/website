@@ -18,11 +18,11 @@ But the actual question is, how critical those problems are and do those problem
 
 Deno is a secure runtime. By which they mean, Deno does not allow access to the disk, network, environment, or creating subprocess. To access any of these resources, it needs to be explicitly called out. Below command run an application allowing it to access the internet.
 
-`deno run index.js --allow-net`
+`deno run --allow-net index.js`
 
 Also below command allows running application with disk write access.
 
-`deno run index.js --allow-write`
+`deno run --allow-write index.js`
 
 Although it seems to be bulletproof initially, a simple option like `-A` in the command would give all access to the application, and the developer's laziness might lead to usage of this option heavily.
 
