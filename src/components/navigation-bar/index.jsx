@@ -40,7 +40,7 @@ const NavigationBar = props => {
 
     <div id='feedly'>
       <a href='https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fwww.jawahar.tech%2Frss.xml' target='blank'><img
-        id='feedlyFollow' src='http://s3.feedly.com/img/follows/feedly-follow-rectangle-volume-medium_2x.png'
+        id='feedlyFollow' src='https://s3.feedly.com/img/follows/feedly-follow-rectangle-volume-medium_2x.png'
         alt='follow us in feedly' width='71' height='28'/></a>
     </div>
   </Box>
