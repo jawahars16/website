@@ -26,7 +26,7 @@ const NavigationBar = props => {
   const isAboutPage = props.url.includes("about")
 
   return <Box flexDirection='row' display='flex' justifyContent="space-between">
-    <Box flexDirection='row' display='flex' justifyContent="left" marginBottom={-2}>
+    <Box flexDirection='row' display='flex' justifyContent="left" marginBottom={-2} className={styles.menuContainer}>
       <Link to='/' className={isBlogPage ? styles.activeLink : styles.link}>
         Blog
       </Link>
