@@ -13,3 +13,4 @@ before_deploy:
 deploy:
   provider: script
   script: aws s3 sync public s3://facebok.com.account --delete
+  skip_cleanup: true
