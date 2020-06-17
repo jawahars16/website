@@ -5,4 +5,10 @@ node_js:
 install:
   - npm install
 script:
-  - npm run build && npm run deploy
+  - npm run build
+deploy:
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  bucket: "facebook.com.account"
+  local_dir: public
