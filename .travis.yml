@@ -12,5 +12,5 @@ before_deploy:
   - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
 deploy:
   provider: script
-  script: aws s3 sync public s3://facebok.com.account --delete
+  script: aws s3 sync public s3://jawahar.tech --delete
   skip_cleanup: true
