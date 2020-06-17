@@ -2,10 +2,8 @@ language: node_js
 sudo: false
 node_js:
   - 10
-install:
-  - npm install
 script:
-  - npm run build
+  - yarn run build
 before_deploy:
   - pip install --user awscli
   - aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
