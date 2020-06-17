@@ -12,3 +12,4 @@ deploy:
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: "facebook.com.account"
   local_dir: public
+  skip_cleanup: true
