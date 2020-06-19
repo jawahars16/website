@@ -29,7 +29,7 @@ const Jumpotron = (props) => {
         </a>
       </div>
       <Typography gutterBottom variant="subtitle1" className={styles.subtitle}>
-        Full Stack Developer • Polyglot Programmer • Tech Enthusiast
+        Web Developer • Polyglot Programmer • Tech Enthusiast
       </Typography>
     </Box>
   )
