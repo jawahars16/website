@@ -82,6 +82,15 @@ h1, h2, h3, h4, h5, h6, p, a {
     margin-top: -20px;
   }
 
+  .featured-image {
+    margin: 15px 0 0 0;
+    max-width: 100%;
+
+    @include media-query-lap {
+      margin: 22px 0 0 -22px;
+      max-width: none;
+    }
+  }
 
   .back-to-home-link {
     font-size: 18px;
@@ -99,6 +108,10 @@ h1, h2, h3, h4, h5, h6, p, a {
     border-left: 10px solid #ccc;
     margin: 1.5em 0;
     padding: 0.5em 10px;
+  }
+
+  ul, ol {
+    margin-left: 45px;
   }
 
   blockquote:before {

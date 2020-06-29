@@ -15,7 +15,7 @@ class BlogPage extends React.Component {
     const { title, siteUrl } = this.props.data.site.siteMetadata
     const { previous, next } = this.props.pageContext
     const featuredImageSrc = post.frontmatter.featuredImage.childImageSharp.fluid.src
-    const featuredImage = <img src={featuredImageSrc} alt={post.frontmatter.title}/>
+    const featuredImage = <img src={featuredImageSrc} alt={post.frontmatter.title} className='featured-image'/>
 
     return (
       <PostLayout location={this.props.location} title={title}>
