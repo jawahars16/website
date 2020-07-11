@@ -35,7 +35,7 @@ So the right tag line would be
 
 ##No more package manager
 
-![alt text](./node_modules.png "Logo Title Text 1")
+![Node Modules](./node_modules.png "Node Modules")
 
 Deno does not have a built-in package manager. Deno tries to simulate the same package management experience from a browser. For example, if you want to use a particular piece of Javascript code, you refer that code link in a script tag. And browser downloads that code and cache it and use it for further access. So basically browser applications do not have a `package.json` or a `node_modules` folder (the biggest enemy of NodeJS users).
 

@@ -71,7 +71,7 @@
   "scripts": {
     "build": "gatsby build",
     "deploy": "node deploy.js",
-    "develop": "gatsby develop",
+    "develop": "rm -rf .cache && gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
