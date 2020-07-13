@@ -6,7 +6,14 @@ featuredImage: "./reception.png"
 tileImage: "./nginx.png"
 ---
 
-NGINX is an open-source web server that powers more than 400 million websites. In this article, I try to explain some of the core concepts of NGINX using real-life scenarios. 
+NGINX is an open-source web server that powers more than 400 million websites. In this article, I try to explain some of the below core concepts of NGINX using real-life scenarios. 
+
+- Reverse Proxy
+- Load Balancing
+- Concurrency
+- SSL Offload
+
+---
 
 Alice got a new job as a receptionist in an insurance company.  Her responsibility is to greet the customers and listen to their requests patiently and address them. She is the face of the company to customers. Alice was excited about her first day.
 ## Reverse proxy

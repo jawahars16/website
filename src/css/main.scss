@@ -83,11 +83,11 @@ h1, h2, h3, h4, h5, h6, p, a {
   }
 
   .featured-image {
-    margin: 15px 0 0 0;
+    margin: 15px 0;
     max-width: 100%;
 
     @include media-query-lap {
-      margin: 22px 0 0 -22px;
+      margin: 22px 0 20px -22px;
       max-width: none;
     }
   }
@@ -166,6 +166,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
   h2 {
     font-size: 24px;
+    margin: 20px 0 24px 0;
   }
 
   h3 {
