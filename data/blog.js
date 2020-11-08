@@ -1,5 +1,6 @@
 const createPaginatedPages = require("./pagination")
 const path = require("path")
+const isDev = process.env.NODE_ENV === "development"
 
 const constructPage = (post, index, component, createPage, isLegacy) => {
   console.log("=== Building Page ===")
@@ -42,9 +43,7 @@ const createPages = (posts, createPage) => {
   createPaginatedPages(allPosts, 0, 1, createPage, "blog", "./src/templates/blog-home.js")
 }
 
-const getArticles = async graphql => {
-  const result = await graphql(
-    `
+const allArticlesQuery = `
       {
         allLegacyContent(sort: {fields: frontmatter___date, order: DESC}) {
           edges {
@@ -103,15 +102,58 @@ const getArticles = async graphql => {
           }
         }
       }
-    `,
-  )
+    `
+const articlesWithoutLegacy = `
+      {
+        allMarkdownRemark(
+          sort: { fields: [frontmatter___date], order: DESC }
+          limit: 1000
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+                readingTime {
+                  text
+                }
+              }
+              excerpt
+              fileAbsolutePath
+              frontmatter {
+                title
+                date(formatString: "MMMM DD, YYYY")
+                description
+                featuredImage {
+                  childImageSharp {
+                    fluid {
+                      src
+                    }
+                  }
+                }
+                tileImage {
+                  childImageSharp {
+                    fluid {
+                      src
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    `
+
+const getArticles = async graphql => {
+  const query = isDev ? articlesWithoutLegacy : allArticlesQuery
+  const result = await graphql(query)
 
   if (result.errors) {
     throw result.errors
   }
 
   return {
-    legacy: result.data.allLegacyContent.edges,
+    legacy: isDev ? [] : result.data.allLegacyContent.edges,
     new: result.data.allMarkdownRemark.edges.filter(p => p.node.fileAbsolutePath.match(/blog/g)),
   }
 }

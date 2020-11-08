@@ -35,12 +35,17 @@ class AboutPage extends React.Component {
         <Upcoming/>
         <div className='about'>
           <Typography variant='body1' gutterBottom>
-            Jawahar is a Software Programmer who is passionate about learning new languages and frameworks. He has years
-            of experience in building enterprise grade applications using various technologies. He started his career in
-            2009
-            as a desktop application developer. He use Windows Forms and Windows Presentation Foundation (WPF) to build
-            thick
-            client applications for Windows, which is later evolved into Universal Windows Platform (UWP).
+            Jawahar is a Software Programmer and Cloud Practitioner who works with several enterprise organisations in
+            converting business requirements to technical design. He also delivered several mission critical applications
+            and responsible for high availability and reliability of the system. He is passionate about several managed
+            cloud services and serverless architectures.
+          </Typography>
+          <Box margin={3}/>
+          <Typography>
+            He is also passionate about learning new languages and frameworks. He has years of experience in building
+            enterprise grade applications using various technologies. He started his career in 2009 as a desktop
+            application developer. He use Windows Forms and Windows Presentation Foundation (WPF) to build thick client
+            applications for Windows, which is later evolved into Universal Windows Platform (UWP).
           </Typography>
           <Box margin={3}/>
           <Typography>
@@ -52,9 +57,7 @@ class AboutPage extends React.Component {
           </Typography>
           <Box margin={3}/>
           <Typography>
-            He is specifically interested in practicing functional programming with modern language features. He usually
-            shares his
-            learning through blog and talks.
+            He usually shares his learning through blog and talks.
           </Typography>
         </div>
 

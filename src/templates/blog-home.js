@@ -8,6 +8,7 @@ import PaginationBar from "../components/pagination-bar"
 import NavigationBar from "../components/navigation-bar"
 import Upcoming from "../components/upcoming"
 
+
 class BlogHome extends React.Component {
   render() {
     const { pageContext } = this.props

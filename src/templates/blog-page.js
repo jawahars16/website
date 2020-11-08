@@ -12,17 +12,23 @@ import Box from "@material-ui/core/Box"
 class BlogPage extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
+
+    if (post === null) {
+      return <div>Shit !!! I hate this...</div>
+    }
+
     const { title, siteUrl } = this.props.data.site.siteMetadata
     const { previous, next } = this.props.pageContext
     const featuredImageSrc = post.frontmatter.featuredImage.childImageSharp.fluid.src
-    const featuredImage = <img src={featuredImageSrc} alt={post.frontmatter.title} className='featured-image webfeedsFeaturedVisual'/>
+    const featuredImage = <img src={featuredImageSrc} alt={post.frontmatter.title}
+                               className='featured-image webfeedsFeaturedVisual'/>
 
     return (
       <PostLayout location={this.props.location} title={title}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
-          featureImage={featuredImageSrc.includes('http') ? featuredImageSrc : `https://www.jawahar.tech${featuredImageSrc}`}
+          featureImage={featuredImageSrc.includes("http") ? featuredImageSrc : `https://www.jawahar.tech${featuredImageSrc}`}
         />
         <Box boxShadow={5} className='content'>
           <article>
