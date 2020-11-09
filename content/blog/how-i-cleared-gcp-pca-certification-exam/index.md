@@ -1,7 +1,7 @@
 ---
 title: How I cleared GCP Cloud Architect certification
 date: "2020-11-09T22:12:03.284Z"
-description: "GCP Load balancers are the most interesting topic when you start learning Google Cloud Platform. There are different types of load balancers available and understanding them would help us to decide the right load balancer for the right purpose."
+description: "I started practising Google cloud platform couple of years back, working mostly with Google Kubernetes engine and other few services like compute engine, networks and firewalls. Though I had a considerable amount of experience in software development, cloud computing was one of my new areas to explore."
 featuredImage: "./featured-image.jpg"
 tileImage: "./badge-pca.png"
 ---
