@@ -35,7 +35,7 @@
     "gatsby-transformer-remark": "^2.6.39",
     "gatsby-transformer-sharp": "^2.3.7",
     "gatsby-transformer-yaml": "^2.2.25",
-    "highlight.js": "^9.17.1",
+    "highlight.js": "^10.4.1",
     "jquery": "^3.4.1",
     "moment": "^2.24.0",
     "node-sass": "^4.13.0",
