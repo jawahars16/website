@@ -208,4 +208,18 @@ h1, h2, h3, h4, h5, h6, p, a {
   }
 }
 
+.certifications {
+  text-align: center;
+  a {
+    margin: 10px;
+    border: none;
+    box-shadow: none;
+
+    img {
+      box-shadow: -2px 0px 20px -10px rgba(0,0,0,0.79);
+-webkit-box-shadow: -2px 0px 20px -10px rgba(0,0,0,0.79);
+-moz-box-shadow: -2px 0px 20px -10px rgba(0,0,0,0.79);
+    }
+  }
+}
 

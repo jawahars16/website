@@ -48,6 +48,7 @@
     "react-typography": "^0.16.19",
     "read-time-estimate": "^0.0.2",
     "simple-icons": "^2.6.0",
+    "simple-react-lightbox": "^3.5.5",
     "styled-components": "^4.4.1",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",

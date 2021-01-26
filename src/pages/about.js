@@ -9,6 +9,10 @@ import Divider from "@material-ui/core/Divider"
 import Image from "gatsby-image"
 import Connect from "../components/connect"
 import Upcoming from "../components/upcoming"
+import { SRLWrapper } from "simple-react-lightbox";
+import csmcert from '../../content/assets/csm-cert.jpg'
+import gcpcert from '../../content/assets/gcp-cert.jpeg'
+import xamcert from '../../content/assets/xamarin-cert.jpeg'
 
 class AboutPage extends React.Component {
   render() {
@@ -18,11 +22,11 @@ class AboutPage extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title='About'
-             featureImage={`https://jawahar.tech${data.avatar.childImageSharp.fixed.src}`}/>
-        <Box style={{ margin: 24 }}/>
-        <NavigationBar url='/about'/>
+          featureImage={`https://jawahar.tech${data.avatar.childImageSharp.fixed.src}`} />
+        <Box style={{ margin: 24 }} />
+        <NavigationBar url='/about' />
 
-        <Box style={{ margin: 40 }}/>
+        <Box style={{ margin: 40 }} />
 
         <Box className='profile-picture' boxShadow={5}>
           <Image
@@ -30,9 +34,32 @@ class AboutPage extends React.Component {
             alt='Jawahar'
           />
         </Box>
-        <Connect/>
-        <Box style={{ margin: 20 }}/>
-        <Upcoming/>
+        <Box style={{ margin: 20 }} />
+        <Upcoming />
+        <Box style={{ marginTop: 30 }} />
+        <div className="certifications">
+          <SRLWrapper>
+            <a href={csmcert}>
+              <Image
+                fixed={data.csm.childImageSharp.fixed}
+                alt='Certified Scrum Master'
+              />
+            </a>
+            <a href={xamcert}>
+              <Image
+                fixed={data.xamarin.childImageSharp.fixed}
+                alt='Certified Scrum Master'
+              />
+            </a>
+            <a href={gcpcert}>
+              <Image
+                fixed={data.gcp.childImageSharp.fixed}
+                alt='Certified Scrum Master'
+              />
+            </a>
+          </SRLWrapper>
+        </div>
+        <Box style={{ marginTop: 30 }} />
         <div className='about'>
           <Typography variant='body1' gutterBottom>
             Jawahar is a Software Programmer and Cloud Practitioner who works with several enterprise organisations in
@@ -40,14 +67,14 @@ class AboutPage extends React.Component {
             and responsible for high availability and reliability of the system. He is passionate about several managed
             cloud services and serverless architectures.
           </Typography>
-          <Box margin={3}/>
+          <Box margin={3} />
           <Typography>
             He is also passionate about learning new languages and frameworks. He has years of experience in building
             enterprise grade applications using various technologies. He started his career in 2009 as a desktop
             application developer. He use Windows Forms and Windows Presentation Foundation (WPF) to build thick client
             applications for Windows, which is later evolved into Universal Windows Platform (UWP).
           </Typography>
-          <Box margin={3}/>
+          <Box margin={3} />
           <Typography>
             In mid 2015, he shifted towards mobile app development. He was expertise in developing native Windows and
             Android apps. He was a Xamarin certified mobile developer. And currently he is working in Web Development.
@@ -55,11 +82,12 @@ class AboutPage extends React.Component {
             like Angular and React. He also has proficient knowledge and hands on experience in managing complex
             infrastructure for web applications.
           </Typography>
-          <Box margin={3}/>
+          <Box margin={3} />
           <Typography>
             He usually shares his learning through blog and talks.
           </Typography>
         </div>
+        <Connect />
 
       </Layout>
     )
@@ -77,7 +105,31 @@ export const pageQuery = graphql`
                     src
                 }
             }
-        }
+        },
+        csm: file(absolutePath: { regex: "/csm.png/" }) {
+            childImageSharp {
+                fixed(width: 120, height:120) {
+                    ...GatsbyImageSharpFixed
+                    src
+                }
+            }
+        },
+        xamarin: file(absolutePath: { regex: "/xamarin.png/" }) {
+            childImageSharp {
+                fixed(width: 125, height:125) {
+                    ...GatsbyImageSharpFixed
+                    src
+                }
+            }
+        },
+        gcp: file(absolutePath: { regex: "/gcp.png/" }) {
+            childImageSharp {
+                fixed(width: 120, height:120) {
+                    ...GatsbyImageSharpFixed
+                    src
+                }
+            }
+        },
         site {
             siteMetadata {
                 title
