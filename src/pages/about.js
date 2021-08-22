@@ -12,6 +12,7 @@ import Upcoming from "../components/upcoming"
 import { SRLWrapper } from "simple-react-lightbox";
 import csmcert from '../../content/assets/csm-cert.jpg'
 import gcpcert from '../../content/assets/gcp-cert.jpeg'
+import azurecert from '../../content/assets/azurecert.png'
 import xamcert from '../../content/assets/xamarin-cert.jpeg'
 
 class AboutPage extends React.Component {
@@ -39,21 +40,27 @@ class AboutPage extends React.Component {
         <Box style={{ marginTop: 30 }} />
         <div className="certifications">
           <SRLWrapper>
-            <a href={csmcert}>
+            <a href={azurecert}>
               <Image
-                fixed={data.csm.childImageSharp.fixed}
-                alt='Certified Scrum Master'
-              />
-            </a>
-            <a href={xamcert}>
-              <Image
-                fixed={data.xamarin.childImageSharp.fixed}
-                alt='Certified Scrum Master'
+                fixed={data.azure.childImageSharp.fixed}
+                alt='Certified Azure Solution Architect'
               />
             </a>
             <a href={gcpcert}>
               <Image
                 fixed={data.gcp.childImageSharp.fixed}
+                alt='Certified Google Cloud Architect'
+              />
+            </a>
+            <a href={xamcert}>
+              <Image
+                fixed={data.xamarin.childImageSharp.fixed}
+                alt='Certified Xamarin Mobile Developer'
+              />
+            </a>
+            <a href={csmcert}>
+              <Image
+                fixed={data.csm.childImageSharp.fixed}
                 alt='Certified Scrum Master'
               />
             </a>
@@ -130,6 +137,14 @@ export const pageQuery = graphql`
                 }
             }
         },
+        azure: file(absolutePath: { regex: "/azure.png/" }) {
+          childImageSharp {
+              fixed(width: 120, height:120) {
+                  ...GatsbyImageSharpFixed
+                  src
+              }
+          }
+      },
         site {
             siteMetadata {
                 title
