@@ -1,0 +1,30 @@
+@import '../../css/variables';
+@import '../../css/media';
+
+.cover {
+  width: 150px;
+  object-fit: cover;
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  margin-bottom: 20px;
+
+  h5 {
+    font-weight: 500;
+    color: $primaryColor;
+  }
+
+  img {
+    display: none;
+    width: 8em;
+    height: 8.5em;
+    object-fit: cover;
+    margin: 0;
+
+    @include media-query-lap {
+      display: block;
+    }
+  }
+}

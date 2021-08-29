@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import SEO from "../components/seo"
+import HBlogTile from "../components/h-blog-tile"
 import PostLayout from "../components/layout/post-layout"
 import { Icon, Typography } from "@material-ui/core"
 import Divider from "@material-ui/core/Divider"
@@ -12,6 +13,7 @@ import Box from "@material-ui/core/Box"
 class BlogPage extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
+    const otherArticles = this.props.data.allMarkdownRemark.edges
 
     if (post === null) {
       return <div>Shit !!! I hate this...</div>
@@ -53,12 +55,16 @@ class BlogPage extends React.Component {
             <section dangerouslySetInnerHTML={{ __html: post.html }}/>
             <Divider variant="middle" style={{ margin: 0 }}/>
             <SocialShare title={post.frontmatter.title} url={`${siteUrl}${this.props.pageContext.slug}`}/>
+            <Box display="flex" flexDirection="row" m={-1}>
+              {otherArticles.map(({ node }) => (
+                <HBlogTile blog={node} key={node.fields.slug}/>
+              ))}
+            </Box>
             <CommentsSection title={post.frontmatter.title}
                              id={this.props.pageContext.slug}
                              url={`${siteUrl}${this.props.pageContext.slug}`}/>
           </article>
         </Box>
-
         <nav>
           <ul
             style={{
@@ -99,6 +105,42 @@ export const pageQuery = graphql`
                 title
                 siteUrl
             }
+        }
+        allMarkdownRemark(
+          sort: { fields: [frontmatter___date], order: DESC }
+          limit: 3
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+                readingTime {
+                  text
+                }
+              }
+              excerpt
+              fileAbsolutePath
+              frontmatter {
+                title
+                date(formatString: "MMMM DD, YYYY")
+                description
+                featuredImage {
+                  childImageSharp {
+                    fluid {
+                      src
+                    }
+                  }
+                }
+                tileImage {
+                  childImageSharp {
+                    fluid {
+                      src
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
         markdownRemark(fields: { slug: { eq: $slug } }) {
             id
