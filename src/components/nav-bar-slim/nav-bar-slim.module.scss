@@ -9,22 +9,6 @@
   top: 0;
   z-index: 10000;
 }
-
-.layout {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.postLayout {
-  max-width: 800px;
-  margin: 64px auto;
-
-  //article {
-  //  font-size: 20px;
-  //  line-height: 1.6em;
-  //}
-}
-
 .toolbar {
   height: 47px;
   display: flex;
@@ -43,8 +27,4 @@
     padding: 0 10px;
     box-shadow: none;
   }
-}
-
-.hideSlimHeader {
-  opacity: 0;
 }

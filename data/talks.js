@@ -65,4 +65,4 @@ const getTalks = async graphql => {
   return result.data.allMarkdownRemark.edges
 }
 
-module.exports = createTalks
+module.exports = { createTalks, getTalks }

@@ -1,0 +1,17 @@
+@import '../../css/variables';
+@import '../../css/media';
+
+.hometitle {
+  h2 {
+    font-size: 26px;
+    color: $primaryColor;
+  }
+  .line {
+    background-color: $primaryColor;
+    opacity: 0.8;
+  }
+  a {
+    box-shadow: none;
+    font-size: 18px;
+  }
+}

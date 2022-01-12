@@ -1,0 +1,34 @@
+@import '../../css/variables';
+@import '../../css/media';
+
+.cover {
+  width: 150px;
+  object-fit: cover;
+  margin: 0;
+}
+
+.card {
+  display: flex;
+
+  .media {
+    height: 100px;
+  }
+  
+  h5 {
+    color: $primaryColor;
+    font-size: 1.2em;
+    height: 63px;
+    font-weight: 400;
+  }
+
+  img {
+    display: none;
+    object-fit: cover;
+    background-color: $primaryColor;
+    margin-bottom: 0;
+
+    @include media-query-lap {
+      display: block;
+    }
+  }
+}

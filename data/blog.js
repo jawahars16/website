@@ -145,7 +145,7 @@ const articlesWithoutLegacy = `
     `
 
 const getArticles = async graphql => {
-  const query = isDev ? articlesWithoutLegacy : allArticlesQuery
+  const query = allArticlesQuery
   const result = await graphql(query)
 
   if (result.errors) {
@@ -153,9 +153,9 @@ const getArticles = async graphql => {
   }
 
   return {
-    legacy: isDev ? [] : result.data.allLegacyContent.edges,
+    legacy: result.data.allLegacyContent.edges,
     new: result.data.allMarkdownRemark.edges.filter(p => p.node.fileAbsolutePath.match(/blog/g)),
   }
 }
 
-module.exports = createBlogPages
+module.exports = { createBlogPages, getArticles }

@@ -1,9 +1,10 @@
-const createBlogPages = require("./data/blog")
+const { createBlogPages } = require("./data/blog")
 const { createFilePath, createRemoteFileNode } = require("gatsby-source-filesystem")
 const createLegacyNodes = require("./data/legacy")
 const createPaginatedPages = require("./data/pagination")
 const path = require("path")
-const createTalks = require("./data/talks")
+const { createTalks } = require("./data/talks")
+const { createHomePage } = require("./data/home")
 let legacyNodesCreated = false
 
 exports.createPages = async ({ graphql, actions }) => {
@@ -14,6 +15,7 @@ exports.createPages = async ({ graphql, actions }) => {
       console.log("Creating pages ...")
       await createBlogPages(createPage, graphql)
       await createTalks(createPage, graphql)
+      await createHomePage(createPage, graphql)
     } else {
       console.log("Nodes not ready...")
     }

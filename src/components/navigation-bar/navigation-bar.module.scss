@@ -6,19 +6,30 @@
   margin-bottom: -18px;
 }
 
-.menu-container {
-  margin-left: -10px;
-}
-
 .link {
   box-shadow: none;
   font-size: 18px;
   color: #4A5258;
-  width: 70px;
+  width: 75px;
   text-align: center;
 
   &:hover {
     font-weight: 500;
+  }
+}
+
+.home-link {
+  box-shadow: none;
+  font-size: 18px;
+  color: #fff;
+  background-color: $primaryColor;
+  width: 90px;
+  text-align: center;
+  margin-right: 10px;
+
+  &:hover {
+    font-weight: 500;
+    background-color: #FD7475;
   }
 }
 
@@ -29,4 +40,12 @@
   color: $primaryColor;
   font-weight: 500;
   text-align: center;
+}
+
+.sticky {
+  background-color: red;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }

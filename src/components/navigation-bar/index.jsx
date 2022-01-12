@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef, useEffect } from "react"
 import { Link } from "gatsby"
 import BottomNavigation from "@material-ui/core/BottomNavigation/BottomNavigation"
 import styles from "./navigation-bar.module.scss"
@@ -21,14 +21,21 @@ const activeLinkStyle = {
 
 const NavigationBar = props => {
 
-  const isBlogPage = props.url.includes("blog") || props.url === "/"
+  const isHomePage = props.url === "/"
+  const isBlogPage = props.url.includes("blog")
   const isTalkPage = props.url.includes("talks")
   const isAboutPage = props.url.includes("about")
 
   return <Box flexDirection='row' display='flex' justifyContent="space-between">
     <Box flexDirection='row' display='flex' justifyContent="left" marginBottom={-2} className={styles.menuContainer}>
-      <Link to='/' className={isBlogPage ? styles.activeLink : styles.link}>
+      <Link to='/' className={styles.homeLink}>
+        ☗ Home
+      </Link>
+      <Link to='/blog' className={isBlogPage ? styles.activeLink : styles.link}>
         Blog
+      </Link>
+      <Link to='https://www.youtube.com/channel/UCmMu15DUGT3klr0M6RBQqbg/videos' target="_blank" rel="noopener" className={styles.link}>
+        Videos
       </Link>
       <Link to='/talks' className={isTalkPage ? styles.activeLink : styles.link}>
         Talks
@@ -41,7 +48,7 @@ const NavigationBar = props => {
     <div id='feedly'>
       <a href='https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fwww.jawahar.tech%2Frss.xml' target='blank'><img
         id='feedlyFollow' src='https://s3.feedly.com/img/follows/feedly-follow-rectangle-volume-medium_2x.png'
-        alt='follow us in feedly' width='71' height='28'/></a>
+        alt='follow us in feedly' width='71' height='28' /></a>
     </div>
   </Box>
 }
