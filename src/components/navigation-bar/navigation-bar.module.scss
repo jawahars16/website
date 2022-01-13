@@ -6,16 +6,46 @@
   margin-bottom: -18px;
 }
 
+.home-icon {
+  margin-bottom: -3px;
+  opacity: 0.9;
+  margin-right: 3px;
+}
+
 .link {
   box-shadow: none;
   font-size: 18px;
   color: #4A5258;
   width: 75px;
   text-align: center;
+  margin-right: 12px;
 
   &:hover {
     font-weight: 500;
   }
+}
+
+.mobile-link {
+  box-shadow: none;
+  font-size: 17px;
+  color: #4A5258;
+  width: 75px;
+  text-align: center;
+  margin-right: 12px;
+
+  &:hover {
+    font-weight: 500;
+  }
+}
+
+.active-mobile-link {
+  box-shadow: none;
+  width: 70px;
+  font-size: 17px;
+  margin-right: 12px;
+  color: $primaryColor;
+  font-weight: 500;
+  text-align: center;
 }
 
 .home-link {
@@ -23,9 +53,23 @@
   font-size: 18px;
   color: #fff;
   background-color: $primaryColor;
-  width: 90px;
+  width: 95px;
   text-align: center;
   margin-right: 10px;
+  padding: 5px 8px 5px 8px;
+  border-radius: 3px;
+
+  &:hover {
+    font-weight: 500;
+    background-color: #FD7475;
+  }
+}
+
+.mobile-home-link {
+  box-shadow: none;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: -2px;
 
   &:hover {
     font-weight: 500;
@@ -40,6 +84,7 @@
   color: $primaryColor;
   font-weight: 500;
   text-align: center;
+  margin-right: 12px;
 }
 
 .sticky {
