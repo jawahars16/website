@@ -53,7 +53,7 @@ export default function Home(props) {
       <Box style={{ margin: 24 }} />
 
       <div style={{ textAlign: "center", margin: "20px 0", fontSize: "16.5px" }}>
-        <Typography variant="p">
+        <Typography variant="p" style={{opacity: 0.7}}>
           Jawahar is a Software Programmer and Cloud Practitioner who works with several enterprise organisations in
           converting business requirements to technical design. He also delivered several mission critical applications
           and responsible for high availability and reliability of the system.
@@ -68,7 +68,7 @@ export default function Home(props) {
 
       <Box sx={{ height: 20 }} />
 
-      <HomeTitle text="Blog" url="/blog" />
+      <HomeTitle text="✏️ Blog" url="/blog" />
 
       <Grid container spacing={2}>
         {articles.map(({ node }) => (
@@ -78,7 +78,7 @@ export default function Home(props) {
 
       <Box sx={{ height: 60 }} />
 
-      <HomeTitle text="Videos" url="https://www.youtube.com/channel/UCmMu15DUGT3klr0M6RBQqbg/videos" />
+      <HomeTitle text="📹 Videos" url="https://www.youtube.com/channel/UCmMu15DUGT3klr0M6RBQqbg/videos" />
 
       <Grid container spacing={1} justifyContent="space-between">
         {videos.map(({ url }) => embed(notMobile, url))}
@@ -86,7 +86,7 @@ export default function Home(props) {
 
       <Box sx={{ height: 20 }} />
 
-      <HomeTitle text="Talks" url="/talks" />
+      <HomeTitle text="🎤 Talks" url="/talks" />
 
       <Grid container spacing={2}>
         {talks.map(({ node }) => (
@@ -96,6 +96,3 @@ export default function Home(props) {
     </Layout>
   )
 }
-// }
-
-// export default Home

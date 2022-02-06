@@ -52,10 +52,10 @@ export default function BlogTile(props) {
           <Card className={classes.card}>
             {featuredImg}
             <div>
-              <CardContent>
-                <Typography variant="subtitle2" className='date-read-time'>
-                  {date} • {readTime}
-                </Typography>
+                <CardContent>
+                  <Typography variant="subtitle2" className='date-read-time'>
+                    {date} • {readTime}
+                  </Typography>
                 <Typography variant="h5">
                   {title}
                 </Typography>

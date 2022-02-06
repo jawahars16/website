@@ -72,7 +72,7 @@ class AboutPage extends React.Component {
             Jawahar is a Software Programmer and Cloud Practitioner who works with several enterprise organisations in
             converting business requirements to technical design. He also delivered several mission critical applications
             and responsible for high availability and reliability of the system. He is passionate about several managed
-            cloud services and serverless architectures.
+            cloud services and serverless architectures. He is a certified GCP and Azure Cloud Architect.
           </Typography>
           <Box margin={3} />
           <Typography>

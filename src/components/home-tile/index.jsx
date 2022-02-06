@@ -59,6 +59,9 @@ export default function HomeTile(props) {
                             style={{display: "block"}}
                         />
                         <CardContent >
+                            <Typography variant="subtitle2" className='date-read-time'>
+                                {date}
+                            </Typography>
                             <Typography gutterBottom variant="h5" component="h5" >
                                 {title}
                             </Typography>

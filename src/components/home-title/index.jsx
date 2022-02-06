@@ -20,12 +20,12 @@ export default function HomeTitle({ text, url }) {
                 </Grid>
                 <Grid item>
                     <Link href={url} underline="none">
-                        Show More >>
+                        Show more ▸
                     </Link>
                 </Grid>
             </Grid>
-            <Box style={{ marginTop: 10, marginBottom: 24 }} sx={{
-                height: 2
+            <Box style={{ marginTop: 10, marginBottom: 24, opacity: 0.5 }} sx={{
+                height: 1
             }} className={classes.line} />
         </Grid>
     )

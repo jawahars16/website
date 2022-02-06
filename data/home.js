@@ -9,13 +9,13 @@ const createHomePage = async (createPage, graphql) => {
     const talks = await getTalks(graphql)
     const videos = [
       {
-        url: "https://www.youtube.com/embed/M3krukAWUdQ"
-      },
-      {
         url: "https://www.youtube.com/embed/JM1-WDihR8M"
       },
       {
-        url: "https://www.youtube.com/embed/m0XZxjmrMwk"
+        url: "https://www.youtube.com/embed/8lHpcXfxSmw"
+      },
+      {
+        url: "https://www.youtube.com/embed/JpFYfetOKG4"
       }
     ]
     

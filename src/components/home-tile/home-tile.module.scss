@@ -13,11 +13,17 @@
   .media {
     height: 100px;
   }
+
+  h6 {
+    font-size: 0.8em;
+    opacity: 0.6;
+    font-style: normal;
+  }
   
   h5 {
     color: $primaryColor;
-    font-size: 1.2em;
-    height: 63px;
+    font-size: 1em;
+    height: 43px;
     font-weight: 400;
   }
 
