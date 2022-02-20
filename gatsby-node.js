@@ -15,7 +15,7 @@ exports.createPages = async ({ graphql, actions }) => {
       console.log("Creating pages ...")
       await createBlogPages(createPage, graphql)
       await createTalks(createPage, graphql)
-      await createHomePage(createPage, graphql)
+      // await createHomePage(createPage, graphql)
     } else {
       console.log("Nodes not ready...")
     }

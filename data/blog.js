@@ -41,6 +41,7 @@ const createPages = (posts, createPage) => {
   posts.legacy.forEach((post, index) => constructPage(post, index, legacyBlogPost, createPage, true))
   const allPosts = [...posts.new, ...posts.legacy]
   createPaginatedPages(allPosts, 0, 1, createPage, "blog", "./src/templates/blog-home.js")
+  createPaginatedPages(allPosts, 0, 1, createPage, "", "./src/templates/blog-home.js") // root path also leads to blog
 }
 
 const allArticlesQuery = `

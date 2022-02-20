@@ -32,7 +32,7 @@ const NavBarSlim = () => {
           </a>
         </div>
         <div className={styles.menu}>
-          <Link to='/'>Home</Link>
+          {/* <Link to='/'>Home</Link> */}
           <Link to='/blog'>Blog</Link>
           <Link to='https://www.youtube.com/channel/UCmMu15DUGT3klr0M6RBQqbg/videos' target="_blank" rel="noopener">Videos</Link>
           <Link to='/talks'>Talks</Link>
