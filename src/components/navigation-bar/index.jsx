@@ -36,13 +36,13 @@ const NavigationBar = props => {
             Home
           </Link> */}
           <Link to='/blog' className={isBlogPage ? styles.activeLink : styles.link}>
-            Blog
+            Blog 〡
           </Link>
           <Link to='https://www.youtube.com/channel/UCmMu15DUGT3klr0M6RBQqbg/videos' target="_blank" rel="noopener" className={styles.link}>
-            Videos
+            Videos 〡
           </Link>
           <Link to='/talks' className={isTalkPage ? styles.activeLink : styles.link}>
-            Talks
+            Talks 〡
           </Link>
           <Link to='/about' className={isAboutPage ? styles.activeLink : styles.link}>
             About

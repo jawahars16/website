@@ -55,11 +55,11 @@ class BlogPage extends React.Component {
             <section dangerouslySetInnerHTML={{ __html: post.html }}/>
             <Divider variant="middle" style={{ margin: 0 }}/>
             <SocialShare title={post.frontmatter.title} url={`${siteUrl}${this.props.pageContext.slug}`}/>
-            <Box display="flex" flexDirection="row" m={-1}>
+            {/* <Box display="flex" flexDirection="row" m={-1}>
               {otherArticles.map(({ node }) => (
                 <HBlogTile blog={node} key={node.fields.slug}/>
               ))}
-            </Box>
+            </Box> */}
             <CommentsSection title={post.frontmatter.title}
                              id={this.props.pageContext.slug}
                              url={`${siteUrl}${this.props.pageContext.slug}`}/>
