@@ -2,6 +2,9 @@
 
 [![Build Status](https://travis-ci.org/jawahars16/website.svg?branch=master)](https://travis-ci.org/jawahars16/website)
 
+![example workflow](https://github.com/jawahars16/website/ci.yml/badge.svg)
+
+
 The site uses Gatsby with React.
 
 ## About the Author
