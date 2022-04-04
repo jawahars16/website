@@ -13,6 +13,7 @@ import { SRLWrapper } from "simple-react-lightbox";
 import csmcert from '../../content/assets/csm-cert.jpg'
 import gcpcert from '../../content/assets/gcp-cert.jpeg'
 import azurecert from '../../content/assets/azurecert.png'
+import hcvault from '../../content/assets/hc-vault.png'
 import xamcert from '../../content/assets/xamarin-cert.jpeg'
 
 class AboutPage extends React.Component {
@@ -40,6 +41,12 @@ class AboutPage extends React.Component {
         <Box style={{ marginTop: 30 }} />
         <div className="certifications">
           <SRLWrapper>
+            <a href={hcvault}>
+              <Image
+                fixed={data.hcbadge.childImageSharp.fixed}
+                alt='Certified Azure Solution Architect'
+              />
+            </a>
             <a href={azurecert}>
               <Image
                 fixed={data.azure.childImageSharp.fixed}
@@ -130,6 +137,14 @@ export const pageQuery = graphql`
             }
         },
         gcp: file(absolutePath: { regex: "/gcp.png/" }) {
+            childImageSharp {
+                fixed(width: 120, height:120) {
+                    ...GatsbyImageSharpFixed
+                    src
+                }
+            }
+        },
+        hcbadge: file(absolutePath: { regex: "/hcbadge.png/" }) {
             childImageSharp {
                 fixed(width: 120, height:120) {
                     ...GatsbyImageSharpFixed

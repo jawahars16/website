@@ -15,23 +15,6 @@ module.exports = {
         trackingId: process.env.GOOGLE_ANALYTICS_ID,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-cookiehub-banner`,
-    //   options: {
-    //     cookieHubId: "4bc895cd",
-    //     categories: [
-    //       {
-    //         categoryName: 'required',
-    //       },
-    //       {
-    //         categoryName: 'analytics',
-    //       },
-    //       {
-    //         categoryName: 'marketing',
-    //       }
-    //     ]
-    //   }
-    // },
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
@@ -40,13 +23,6 @@ module.exports = {
     },
     `gatsby-plugin-sitemap`,
     "gatsby-plugin-sass",
-    // {
-    //   resolve: `gatsby-plugin-hotjar`,
-    //   options: {
-    //     id: process.env.HOTJAR_ID,
-    //     sv: 6
-    //   },
-    // },
     `gatsby-plugin-material-ui`,
     {
       resolve: `gatsby-source-filesystem`,
