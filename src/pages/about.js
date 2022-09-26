@@ -30,7 +30,7 @@ class AboutPage extends React.Component {
 
         <Box style={{ margin: 40 }} />
 
-        <Box className='profile-picture' boxShadow={5}>
+        <Box className='profile-picture' >
           <Image
             fixed={data.avatar.childImageSharp.fixed}
             alt='Jawahar'
@@ -112,7 +112,7 @@ export default AboutPage
 
 export const pageQuery = graphql`
     query {
-        avatar: file(absolutePath: { regex: "/Profile.jpg/" }) {
+        avatar: file(absolutePath: { regex: "/DP.jpeg/" }) {
             childImageSharp {
                 fixed(width: 200, height: 200) {
                     ...GatsbyImageSharpFixed
