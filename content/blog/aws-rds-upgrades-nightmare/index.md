@@ -1,5 +1,5 @@
 ---
-title: RDS Upgrades - every enginner's nightmare
+title: RDS Upgrades - every engineer's nightmare
 date: "2023-02-12T22:12:03.284Z"
 description: "Upgrading a database is the stuff that nightmares are made of, especially when it comes to Amazon Web Services (AWS) Relational Database Service (RDS). It's like trying to change a tire on a car that's driving down the highway at 100 miles per hour!"
 featuredImage: "./featured-image.jpeg"
