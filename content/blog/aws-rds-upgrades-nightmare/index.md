@@ -1,12 +1,18 @@
 ---
-title: AWS RDS Upgrades - Every enginner's nightmare
-date: "2023:02:12.284Z"
+title: RDS Upgrades - every enginner's nightmare
+date: "2023-02-12T22:12:03.284Z"
 description: "Upgrading a database is the stuff that nightmares are made of, especially when it comes to Amazon Web Services (AWS) Relational Database Service (RDS). It's like trying to change a tire on a car that's driving down the highway at 100 miles per hour!"
-featuredImage: "./featured-image.png"
+featuredImage: "./featured-image.jpeg"
 tileImage: "./tile_image.png"
 ---
 
-Upgrading a database is the stuff that nightmares are made of, especially when it comes to Amazon Web Services (AWS) Relational Database Service (RDS). It's like trying to change a tire on a car that's driving down the highway at 100 miles per hour! AWS RDS provides managed relational databases as a service, making it easier for businesses to set up, operate, and scale their databases in the cloud. But upgrading these databases to newer versions or modifying configuration settings can be a real hair-puller, causing downtime, data loss, and compatibility issues, making it an engineer's nightmare. In this topic, we'll explore the various aspects of upgrading an AWS RDS database, the common challenges faced, and best practices for a successful upgrade. So, grab a cup of coffee, sit back, and prepare to laugh (or cry) at the silly things that can go wrong during an RDS upgrade.
+Upgrading a database is the stuff that nightmares 😰 are made of, especially when it comes to Amazon Web Services (AWS) Relational Database Service (RDS). It's like trying to change a tire on a car that's driving down the highway at 100 miles per hour! 
+
+![RDS_Upgrade](./meme.jpeg)
+
+AWS RDS provides managed relational databases as a service, making it easier for businesses to set up, operate, and scale their databases in the cloud. But upgrading these databases to newer versions or modifying configuration settings can be a real hair-puller, causing downtime, data loss, and compatibility issues, making it an engineer's nightmare. 
+
+In this topic, we'll explore the various aspects of upgrading an AWS RDS database, the common challenges faced, and best practices for a successful upgrade. So, grab a cup of coffee, sit back, and prepare to laugh (or cry) at the silly things that can go wrong during an RDS upgrade.
 
 ## Minor version upgrade
 
@@ -19,16 +25,16 @@ Upgrading is super easy, you can do it through the AWS Management Console, the A
 
 So, to keep things running smoothly, it's a good idea to keep your database engines up to date with the latest minor versions. But always make sure to plan your upgrade properly to avoid any unexpected downtime or data loss.
 
-Auto minor version upgrade
+### Auto minor version upgrade
 
 Auto minor version upgrades allow you to automatically upgrade your database engine to the latest patch version within the same major version. This can be a time-saver, as you don't have to manually initiate the upgrade every time a new patch version is released.
 However, it's important to keep in mind that just because the upgrade is automated, doesn't mean you can neglect testing it in a non-production environment first. Compatibility issues or unexpected problems can still arise, even with auto upgrades.
 
 Auto minor version upgrades are currently supported by the following database engines in AWS RDS:
-Amazon Aurora
-Amazon RDS for MySQL
-Amazon RDS for PostgreSQL
-Amazon RDS for MariaDB
+- Amazon Aurora
+- Amazon RDS for MySQL
+- Amazon RDS for PostgreSQL
+- Amazon RDS for MariaDB
 
 It's important to note that the availability of auto minor version upgrades may vary depending on the specific version and edition of the database engine you are using. It's always a good idea to check the AWS RDS documentation or reach out to AWS support to confirm the availability of auto minor version upgrades for your specific RDS instance.
 
@@ -71,6 +77,8 @@ So, you've got an old and creaky database that needs a major upgrade, but you do
 AWS DMS is a fully managed service that makes it easy to migrate your databases from one version to another, including major version upgrades. Whether you're moving from MySQL 5.7 to 8.0, or Oracle 11g to 19c, AWS DMS has you covered.
 
 The process is pretty straightforward. You set up a replication instance, create a source and target endpoint, and let AWS DMS handle the rest. It'll take care of the data migration, ongoing replication, and even schema conversion if needed. And the best part? You don't have to worry about any downtime. AWS DMS uses a continuous data replication technique, so your source database can stay up and running during the migration, with minimal disruption to your applications.
+
+[AWS Documentation](https://aws.amazon.com/dms/)
 
 ## Conclusion
 
